@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:jtbPromise"
+             x:Class="jtbPromise.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnCreateOffLine" Text="Create Doc (Offline)" />
+            <Button x:Name="btnCreateOnLine" Text="Create Doc (Online)" Grid.Row="1"/>
+            <Button x:Name="btnSearch" Text="Search" Grid.Row="2"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,14 @@
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\jtbPromise.deps.json
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\jtbPromise.dll
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\jtbPromise.pdb
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csprojAssemblyReference.cache
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\MakeDocPage.xaml.g.cs
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\SearchDocPage.xaml.g.cs
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csproj.CoreCompileInputs.cache
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.AssemblyInfoInputs.cache
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.AssemblyInfo.cs
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.dll
+C:\Users\junram\source\repos\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.pdb
