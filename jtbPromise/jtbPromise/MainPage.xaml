@@ -17,5 +17,4 @@
             <Button x:Name="btnSearch" Text="Search" Grid.Row="2"/>
         </Grid>
     </StackLayout>
-
 </ContentPage>

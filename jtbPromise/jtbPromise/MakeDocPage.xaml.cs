@@ -20,7 +20,7 @@ namespace jtbPromise
 
         void BtnFirstPersonCert_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushModalAsync(new CertificatePage());
         }
     }
 }

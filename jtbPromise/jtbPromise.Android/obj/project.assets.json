@@ -313,14 +313,14 @@
           "build/MonoAndroid81/Xamarin.Android.Support.Vector.Drawable.targets": {}
         }
       },
-      "Xamarin.Forms/3.1.0.697729": {
+      "Xamarin.Forms/3.3.0.967583": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Android.Support.Design": "25.4.0.2",
-          "Xamarin.Android.Support.v4": "25.4.0.2",
-          "Xamarin.Android.Support.v7.AppCompat": "25.4.0.2",
-          "Xamarin.Android.Support.v7.CardView": "25.4.0.2",
-          "Xamarin.Android.Support.v7.MediaRouter": "25.4.0.2"
+          "Xamarin.Android.Support.Design": "27.0.2",
+          "Xamarin.Android.Support.v4": "27.0.2",
+          "Xamarin.Android.Support.v7.AppCompat": "27.0.2",
+          "Xamarin.Android.Support.v7.CardView": "27.0.2",
+          "Xamarin.Android.Support.v7.MediaRouter": "27.0.2"
         },
         "compile": {
           "lib/MonoAndroid10/FormsViewGroup.dll": {},
@@ -337,15 +337,15 @@
           "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/netstandard2.0/Xamarin.Forms.props": {},
-          "build/netstandard2.0/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "jtbPromise/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Forms": "3.1.0.697729"
+          "Xamarin.Forms": "3.3.0.967583"
         },
         "compile": {
           "bin/placeholder/jtbPromise.dll": {}
@@ -612,24 +612,24 @@
         "xamarin.android.support.vector.drawable.nuspec"
       ]
     },
-    "Xamarin.Forms/3.1.0.697729": {
-      "sha512": "oYfHpCY9i9wN4vLllsIhzDZY5iOCUtZ3RHxID1fiXOcf7yL9UA16NUsI8opoNmpv1Ru2lTGG9ZKKT1sYS6DLjA==",
+    "Xamarin.Forms/3.3.0.967583": {
+      "sha512": "aebAEUHkER6WRo4WpsDd8jq4EudSl3WS4n7Pxcq8ea+x9fHi9PstCU0dU2D5PGvSeKa3yEFSpRljOEjI7qtsNA==",
       "type": "package",
-      "path": "xamarin.forms/3.1.0.697729",
+      "path": "xamarin.forms/3.3.0.967583",
       "files": [
         ".signature.p7s",
-        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
-        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
-        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
-        "build/netstandard1.0/Mono.Cecil.dll",
-        "build/netstandard1.0/System.CodeDom.dll",
-        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
-        "build/netstandard1.0/Xamarin.Forms.Core.dll",
-        "build/netstandard1.0/Xamarin.Forms.DefaultItems.props",
-        "build/netstandard1.0/Xamarin.Forms.DefaultItems.targets",
-        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
-        "build/netstandard1.0/Xamarin.Forms.props",
-        "build/netstandard1.0/Xamarin.Forms.targets",
+        "build/Xamarin.Forms.DefaultItems.props",
+        "build/Xamarin.Forms.DefaultItems.targets",
+        "build/Xamarin.Forms.props",
+        "build/Xamarin.Forms.targets",
+        "build/net461/Mono.Cecil.Mdb.dll",
+        "build/net461/Mono.Cecil.Pdb.dll",
+        "build/net461/Mono.Cecil.Rocks.dll",
+        "build/net461/Mono.Cecil.dll",
+        "build/net461/System.CodeDom.dll",
+        "build/net461/Xamarin.Forms.Build.Tasks.dll",
+        "build/net461/Xamarin.Forms.Core.dll",
+        "build/net461/Xamarin.Forms.Xaml.dll",
         "build/netstandard2.0/Mono.Cecil.Mdb.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
         "build/netstandard2.0/Mono.Cecil.Rocks.dll",
@@ -637,11 +637,7 @@
         "build/netstandard2.0/System.CodeDom.dll",
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
-        "build/netstandard2.0/Xamarin.Forms.DefaultItems.props",
-        "build/netstandard2.0/Xamarin.Forms.DefaultItems.targets",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "build/netstandard2.0/Xamarin.Forms.props",
-        "build/netstandard2.0/Xamarin.Forms.targets",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
@@ -759,7 +755,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.1.0.697729.nupkg.sha512",
+        "xamarin.forms.3.3.0.967583.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -776,7 +772,7 @@
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
       "Xamarin.Android.Support.v7.CardView >= 27.0.2.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
-      "Xamarin.Forms >= 3.1.0.697729",
+      "Xamarin.Forms >= 3.3.0.967583",
       "jtbPromise >= 1.0.0"
     ]
   },
@@ -786,11 +782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\junram\\source\\repos\\jtbPromise\\jtbPromise\\jtbPromise.Android\\jtbPromise.Android.csproj",
+      "projectUniqueName": "C:\\Users\\junram\\Documents\\GitHub\\jtbPromise\\jtbPromise\\jtbPromise.Android\\jtbPromise.Android.csproj",
       "projectName": "jtbPromise.Android",
-      "projectPath": "C:\\Users\\junram\\source\\repos\\jtbPromise\\jtbPromise\\jtbPromise.Android\\jtbPromise.Android.csproj",
+      "projectPath": "C:\\Users\\junram\\Documents\\GitHub\\jtbPromise\\jtbPromise\\jtbPromise.Android\\jtbPromise.Android.csproj",
       "packagesPath": "C:\\Users\\junram\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\junram\\source\\repos\\jtbPromise\\jtbPromise\\jtbPromise.Android\\obj\\",
+      "outputPath": "C:\\Users\\junram\\Documents\\GitHub\\jtbPromise\\jtbPromise\\jtbPromise.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -807,8 +803,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\junram\\source\\repos\\jtbPromise\\jtbPromise\\jtbPromise\\jtbPromise.csproj": {
-              "projectPath": "C:\\Users\\junram\\source\\repos\\jtbPromise\\jtbPromise\\jtbPromise\\jtbPromise.csproj"
+            "C:\\Users\\junram\\Documents\\GitHub\\jtbPromise\\jtbPromise\\jtbPromise\\jtbPromise.csproj": {
+              "projectPath": "C:\\Users\\junram\\Documents\\GitHub\\jtbPromise\\jtbPromise\\jtbPromise\\jtbPromise.csproj"
             }
           }
         }
@@ -839,7 +835,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.1.0.697729, )"
+            "version": "[3.3.0.967583, )"
           }
         }
       }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -28,5 +29,8 @@ namespace jtbPromise
         {
             // Handle when your app resumes
         }
+
+
+  
     }
 }

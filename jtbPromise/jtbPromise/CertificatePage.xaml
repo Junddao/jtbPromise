@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:jtbPromise"
+             x:Class="jtbPromise.CertificatePage">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Label Text="Step 1"
+                FontSize="20"
+                HeightRequest="50"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="1. Record 버튼을 클릭한다.&#10; 2. 오른쪽 숫자를 읽으세요. (123456) &#10; 3. Stop 버튼을 클릭한다. &#10; 4. Play 버튼으로 녹음내용을 확인한다."
+                FontSize="10"
+                HeightRequest="50"
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="BtnRecord" Text="Record"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="BtnRecord_Clicked" />
+            <Button x:Name="BtnStop"  Text="Stop"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="BtnStop_Clicked" />
+            <Button x:Name="BtnPlay" Text="Play"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="BtnPlay_Clicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
