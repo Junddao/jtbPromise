@@ -28,20 +28,34 @@ namespace jtbPromise
             player = new MediaPlayer();
         }
 
-        private void BtnRecord_Clicked(object sender, EventArgs e)
+        public void StartPlayer()
         {
-            StartRecorder();
+            if (player == null)
+            {
+                player = new MediaPlayer();
+            }
+            else
+            {
+                player.Reset();
+            }
+
+            player.SetDataSource(filePath);
+            player.Prepare();
+            player.Start();  
         }
 
-        private void BtnStop_Clicked(object sender, EventArgs e)
+        private void BtnPlay_Clicked(object sender, EventArgs e)
         {
-            StopRecorder();
+            StartPlayer();
         }
 
-        public void StartRecorder()
+        private void BtnRecord_Pressed(object sender, EventArgs e)
         {
             try
             {
+                // Button 색을 바꾼다.
+                BtnRecord.BackgroundColor = Color.Blue;
+
                 if (File.Exists(filePath))
                     File.Delete(filePath);
 
@@ -67,35 +81,27 @@ namespace jtbPromise
             }
         }
 
-        public  void StopRecorder()
+        private void BtnRecord_Released(object sender, EventArgs e)
         {
-            if (recorder != null)
+            try
             {
-                recorder.Stop();
-                recorder.Release();
-                recorder = null;
+                BtnRecord.BackgroundColor = Color.Default;
+                if (recorder != null)
+                {
+                    recorder.Stop();
+                    recorder.Release();
+                    recorder = null;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.Out.WriteLine(ex.StackTrace);
             }
         }
 
-        public void StartPlayer()
+        private void BtnOK_Clicked(object sender, EventArgs e)
         {
-            if (player == null)
-            {
-                player = new MediaPlayer();
-            }
-            else
-            {
-                player.Reset();
-            }
-
-            player.SetDataSource(filePath);
-            player.Prepare();
-            player.Start();  
-        }
-
-        private void BtnPlay_Clicked(object sender, EventArgs e)
-        {
-            StartPlayer();
+            Navigation.PushModalAsync(new SignPage());
         }
     }
 }

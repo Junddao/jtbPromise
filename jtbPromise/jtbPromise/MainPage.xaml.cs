@@ -9,11 +9,16 @@ namespace jtbPromise
 {
     public partial class MainPage : ContentPage
     {
+
+        
+
         public MainPage()
         {
             InitializeComponent();
             btnCreateOffLine.Clicked += BtnCreateOffLine_Clicked;
             btnSearch.Clicked += BtnSearch_Clicked;
+
+            CheckPermissions();
         }
         void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)
         {
@@ -24,6 +29,12 @@ namespace jtbPromise
         void BtnSearch_Clicked(object sender, System.EventArgs e)
         {
             Navigation.PushModalAsync(new SearchDocPage());
+        }
+
+        void CheckPermissions()
+        {
+           
+
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "c13ab3e9dd0afa602671531bfe3629542f85aa4e"
+    "signature": "dc3cb28874815c98a4588cc9cb6d12935bd938b9"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,7 +10,9 @@
       "jtbPromise/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Xamarin.Forms": "3.3.0.967583",
+          "SkiaSharp": "1.60.3",
+          "SkiaSharp.Views.Forms": "1.60.3",
+          "Xamarin.Forms": "3.4.0.1008975",
           "Mono.Android": "0.0.0.0"
         },
         "runtime": {
@@ -23,7 +25,27 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Xamarin.Forms/3.3.0.967583": {
+      "SkiaSharp/1.60.3": {
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.3.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/1.60.3": {
+        "dependencies": {
+          "SkiaSharp": "1.60.3",
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.3.0"
+          }
+        }
+      },
+      "Xamarin.Forms/3.4.0.1008975": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -58,7 +80,7 @@
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
@@ -69,12 +91,26 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Xamarin.Forms/3.3.0.967583": {
+    "SkiaSharp/1.60.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aebAEUHkER6WRo4WpsDd8jq4EudSl3WS4n7Pxcq8ea+x9fHi9PstCU0dU2D5PGvSeKa3yEFSpRljOEjI7qtsNA==",
-      "path": "xamarin.forms/3.3.0.967583",
-      "hashPath": "xamarin.forms.3.3.0.967583.nupkg.sha512"
+      "sha512": "sha512-9L8luXSspkXMhRuBx7CPjEVNJ2CJljpc5XMkDUITCQnhuJJadyCwYSWcAsgEqeRqmAimI2TyJWu73BRsvKTFZg==",
+      "path": "skiasharp/1.60.3",
+      "hashPath": "skiasharp.1.60.3.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Forms/1.60.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwxqM2sskGH0EKCbf1KmKbMq0NEj85k6VuTn8B1ghivCFn2VomsfxtILUsIpSjydE67VdYStVUbn/fEtsHsPgQ==",
+      "path": "skiasharp.views.forms/1.60.3",
+      "hashPath": "skiasharp.views.forms.1.60.3.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.4.0.1008975": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
+      "path": "xamarin.forms/3.4.0.1008975",
+      "hashPath": "xamarin.forms.3.4.0.1008975.nupkg.sha512"
     },
     "Mono.Android/0.0.0.0": {
       "type": "reference",

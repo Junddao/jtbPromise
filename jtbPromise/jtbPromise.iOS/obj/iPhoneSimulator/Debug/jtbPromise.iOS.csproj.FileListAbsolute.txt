@@ -115,3 +115,7 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhone
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.csproj.CopyComplete
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.exe
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.pdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\jtbPromise.dll.mdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.iOS.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\SkiaSharp.Views.Forms.dll

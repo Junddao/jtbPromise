@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:tt="clr-namespace:TouchTracking"
+             x:Class="jtbPromise.SignPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="10">
+            <Label Text="Step 2 .&#10; (싸인하세요.)"
+                FontSize="20"
+                HeightRequest="50"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand" />
+                
+            <Grid 
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand" 
+                BackgroundColor="White">
+
+                <skia:SKCanvasView x:Name="canvasView"
+                                   BackgroundColor="White"
+                               PaintSurface="OnCanvasViewPaintSurface" />
+                <Grid.Effects>
+                    <tt:TouchEffect Capture="True"
+                                TouchAction="OnTouchEffectAction" />
+                </Grid.Effects>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Button 
+                x:Name="BtnClear" 
+                Text="Clear"
+                Grid.Row="0"
+                Margin="50, 5"
+                Clicked="BtnClear_Clicked"/>
+            <Button
+                x:Name="BtnNext" 
+                Text="Next"
+                Grid.Row="1"
+                Margin="50, 5"
+                Clicked="BtnNext_Clicked"/>
+                
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

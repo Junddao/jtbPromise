@@ -29,8 +29,6 @@ namespace jtbPromise
         {
             // Handle when your app resumes
         }
-
-
-  
+        
     }
 }
