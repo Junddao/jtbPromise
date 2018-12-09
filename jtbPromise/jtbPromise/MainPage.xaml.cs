@@ -9,32 +9,27 @@ namespace jtbPromise
 {
     public partial class MainPage : ContentPage
     {
-
-        
-
         public MainPage()
         {
             InitializeComponent();
-            btnCreateOffLine.Clicked += BtnCreateOffLine_Clicked;
-            btnSearch.Clicked += BtnSearch_Clicked;
 
             CheckPermissions();
         }
-        void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)
+        async void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushModalAsync(new MakeDocPage());
+            await Navigation.PushAsync(new MakeDocPage(), false);
+            Navigation.RemovePage(this);
         }
 
 
-        void BtnSearch_Clicked(object sender, System.EventArgs e)
+        async void BtnSearch_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushModalAsync(new SearchDocPage());
+            await Navigation.PushAsync(new SearchDocPage(), false);
         }
 
         void CheckPermissions()
         {
            
-
         }
     }
 }

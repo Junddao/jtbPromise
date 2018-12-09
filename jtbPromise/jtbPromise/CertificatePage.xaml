@@ -27,7 +27,6 @@
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 Clicked="BtnOK_Clicked" />
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -105,6 +105,4 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\jtbPromise.dll
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\bin\Debug\jtbPromise.dll.mdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\linksrc\jtbPromise.dll.mdb

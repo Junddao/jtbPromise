@@ -18,14 +18,23 @@ namespace jtbPromise
         MediaRecorder recorder = null;
         MediaPlayer player = null;
 
-        static string filePath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath + "test.3gp";
+        string mPersonNumber = string.Empty;
 
-        public CertificatePage()
+        static string fileName = string.Empty;
+        static string filePath = string.Empty;
+
+
+
+        public CertificatePage(string personNumber)
         {
-            InitializeComponent();
+            mPersonNumber = personNumber;
+            fileName = mPersonNumber + ".3gp";
+            filePath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath + fileName;
 
             recorder = new MediaRecorder();
             player = new MediaPlayer();
+
+            InitializeComponent();
         }
 
         public void StartPlayer()
@@ -99,9 +108,9 @@ namespace jtbPromise
             }
         }
 
-        private void BtnOK_Clicked(object sender, EventArgs e)
+        private async void BtnOK_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new SignPage());
+            await Navigation.PushAsync(new SignPage(mPersonNumber), false);
         }
     }
 }

@@ -11,7 +11,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="150"/>
                 <RowDefinition Height="60*"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Grid>
@@ -32,28 +32,39 @@
 
                 <Label Text="First Person Name"  VerticalOptions="Center" Grid.Row="1"/>
                 <Editor x:Name="edtFirstPersonName"  Grid.Column="1" Text="{Binding FirstPersonName, Mode=OneWayToSource}" Grid.Row="1"/>
-                <Button x:Name="btnFirstPersonCert" Text="Cert" Grid.Column="2" Grid.Row="1"  />
+                <Button x:Name="btnFirstPersonCert" Text="Cert" Grid.Column="2" Grid.Row="1" Clicked="BtnFirstPersonCert_Clicked" />
 
                 <Label Text="Second Person Name" Grid.Row="2" VerticalOptions="Center"/>
                 <Editor x:Name="edtSecondPersonName" Grid.Row="2" Grid.Column="1" Text="{Binding SecondPersonName, Mode=OneWayToSource}"/>
-                <Button x:Name="btnSecondPersonCert" Text="Cert"  Grid.Row="2" Grid.Column="2"/>
+                <Button x:Name="btnSecondPersonCert" Text="Cert"  Grid.Row="2" Grid.Column="2" Clicked="BtnSecondPersonCert_Clicked"/>
 
                 <Label Text="Content" Grid.Row="3"  VerticalOptions="Center"/>
                 <Editor x:Name="edtContent" Grid.Row="3" Grid.Column="1" Text="{Binding WriteContent}" Grid.ColumnSpan="2" />
 
             </Grid>
-            <Grid Grid.Row="1">
-                <StackLayout>
-                    <Label x:Name="lbTitle" Text="{Binding Title}" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30, 30, 30, 30"/>
-                    <Label x:Name="lbContent" Text="{Binding Document}" />
-                </StackLayout>
 
+            <Grid Grid.Row="1" x:Name="gdDoc">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <StackLayout x:Name="">
+                        <Label x:Name="lbTitle" Text="{Binding Title}" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30, 30, 30, 30"/>
+                        <Label x:Name="lbContent" Text="{Binding Document}" />
+                    </StackLayout>
+
+                </Grid>
+                <Grid Grid.Row="1">
+                    <StackLayout HorizontalOptions="End">
+                        <Label Text="{Binding FirstPersonName}" />
+                        <Label Text="{Binding SecondPersonName}"/>
+                    </StackLayout>
+                </Grid>
             </Grid>
+            
             <Grid Grid.Row="2">
-                <StackLayout HorizontalOptions="End">
-                    <Label Text="{Binding FirstPersonName}" />
-                    <Label Text="{Binding SecondPersonName}"/>
-                </StackLayout>
+                <Button x:Name="btnPreview" Text="Preview" Clicked="BtnPreview_Clicked"/>
             </Grid>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>

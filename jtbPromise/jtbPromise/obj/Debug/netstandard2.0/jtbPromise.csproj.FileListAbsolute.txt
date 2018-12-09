@@ -31,4 +31,3 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\nets
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.pdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\SignPage.xaml.g.cs
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\XamlC.stamp

@@ -22,10 +22,13 @@ namespace jtbPromise
         List<FingerPaintPolyline> completedPolylines = new List<FingerPaintPolyline>();
 
         static string folderPath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath;
-        static string fileName = "test.png";
-        static string filePath = folderPath + fileName;
+        static string fileName = string.Empty;
+        static string filePath = string.Empty;
+
 
         SKBitmap saveBitmap;
+
+        string mPersonNumber = string.Empty;
 
         SKPaint paint = new SKPaint
         {
@@ -36,19 +39,20 @@ namespace jtbPromise
             StrokeJoin = SKStrokeJoin.Round
         };
 
+        public SignPage(string personNumber)
+        {
+            mPersonNumber = personNumber;
+            fileName = personNumber + ".png";
+            filePath = folderPath + fileName;
 
-        public SignPage ()
-		{
-			InitializeComponent ();
-		}
+            InitializeComponent();
+        }
 
         private void BtnClear_Clicked(object sender, EventArgs e)
         {
             completedPolylines.Clear();
             canvasView.InvalidateSurface();
         }
-
-       
 
         void UpdateBitmap()
         {
@@ -163,7 +167,7 @@ namespace jtbPromise
             return (float)(canvasView.CanvasSize.Width * fl / canvasView.Width);
         }
 
-        private void BtnNext_Clicked(object sender, EventArgs e)
+        private async void BtnNext_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -189,11 +193,18 @@ namespace jtbPromise
                     }
                 }
 
+                // 저장되면 OK popup
+                await DisplayAlert("Save", "Complete your sign.", "OK");
+
+                await Navigation.PopToRootAsync();
             }
             catch(Exception ex)
             {
-                DisplayAlert("Alert", "Can't save your Sign.", "OK");
+                await DisplayAlert("Alert", "Can't save your Sign.", "OK");
             }
         }
+
+
+
     }
 }
