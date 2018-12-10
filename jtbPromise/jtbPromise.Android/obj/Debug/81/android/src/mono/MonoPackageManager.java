@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"jtbPromise.Android.dll",
 		"FormsViewGroup.dll",
 		"jtbPromise.dll",
+		"PCLStorage.Abstractions.dll",
+		"PCLStorage.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",

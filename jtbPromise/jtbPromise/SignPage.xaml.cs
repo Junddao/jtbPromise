@@ -198,7 +198,7 @@ namespace jtbPromise
 
                 await Navigation.PopToRootAsync();
             }
-            catch(Exception ex)
+            catch(Exception)
             {
                 await DisplayAlert("Alert", "Can't save your Sign.", "OK");
             }

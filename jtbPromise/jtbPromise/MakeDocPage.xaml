@@ -49,7 +49,7 @@
                     <RowDefinition Height="100"/>
                 </Grid.RowDefinitions>
                 <Grid>
-                    <StackLayout x:Name="">
+                    <StackLayout>
                         <Label x:Name="lbTitle" Text="{Binding Title}" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30, 30, 30, 30"/>
                         <Label x:Name="lbContent" Text="{Binding Document}" />
                     </StackLayout>

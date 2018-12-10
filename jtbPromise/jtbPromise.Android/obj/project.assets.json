@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "iTextSharp/5.5.13": {
-        "type": "package"
-      },
       "PCLStorage/1.0.2": {
         "type": "package",
         "compile": {
@@ -419,8 +416,7 @@
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
-          "Xamarin.Forms": "3.4.0.1008975",
-          "iTextSharp": "5.5.13"
+          "Xamarin.Forms": "3.4.0.1008975"
         },
         "compile": {
           "bin/placeholder/jtbPromise.dll": {}
@@ -432,21 +428,6 @@
     }
   },
   "libraries": {
-    "iTextSharp/5.5.13": {
-      "sha512": "Vukh80ACfWR5hKBCfPobpUny/icva7SRmauowXWTg8N0TGvDqsbrL4Vq6UdWI/fJCsiNfu4mC4zbcxdr7KlIoA==",
-      "type": "package",
-      "path": "itextsharp/5.5.13",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AGPL.txt",
-        "itextsharp.5.5.13.nupkg.sha512",
-        "itextsharp.nuspec",
-        "lib/iTextSharp.xml",
-        "lib/itextsharp.dll",
-        "notice.txt"
-      ]
-    },
     "PCLStorage/1.0.2": {
       "sha512": "gj37kg2DqlKADjnoax9wqSLSo9ZeEBRTEqfXg3R+fm2sbgst2B0Xa6TX1sh2ORrj83vk8lzyZ/DGEQx7c2QKPg==",
       "type": "package",
@@ -1119,16 +1100,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "iTextSharp 5.5.13 패키지가 monoandroid81(MonoAndroid,Version=v8.1)과(와) 호환되지 않습니다. iTextSharp 5.5.13 패키지는 다음을 지원합니다. net(.NETFramework,Version=v0.0)",
-      "libraryId": "iTextSharp",
-      "targetGraphs": [
-        "MonoAndroid,Version=v8.1"
-      ]
-    }
-  ]
+  }
 }

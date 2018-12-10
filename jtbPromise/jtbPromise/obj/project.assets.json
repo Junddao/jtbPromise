@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "iTextSharp/5.5.13": {
-        "type": "package",
-        "compile": {
-          "lib/itextsharp.dll": {}
-        },
-        "runtime": {
-          "lib/itextsharp.dll": {}
-        }
-      },
       "Microsoft.Bcl/1.1.6": {
         "type": "package",
         "dependencies": {
@@ -143,21 +134,6 @@
     }
   },
   "libraries": {
-    "iTextSharp/5.5.13": {
-      "sha512": "Vukh80ACfWR5hKBCfPobpUny/icva7SRmauowXWTg8N0TGvDqsbrL4Vq6UdWI/fJCsiNfu4mC4zbcxdr7KlIoA==",
-      "type": "package",
-      "path": "itextsharp/5.5.13",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "AGPL.txt",
-        "itextsharp.5.5.13.nupkg.sha512",
-        "itextsharp.nuspec",
-        "lib/iTextSharp.xml",
-        "lib/itextsharp.dll",
-        "notice.txt"
-      ]
-    },
     "Microsoft.Bcl/1.1.6": {
       "sha512": "PTJeGyRE9SvTtHU/Up8455RH2KhP3MWtDQAxW1jMqPc8j/oC9oJqj2exq7Ng1O9HcLQJXsDtFy6HjnBlsox1vg==",
       "type": "package",
@@ -742,8 +718,7 @@
       "PCLStorage >= 1.0.2",
       "SkiaSharp >= 1.60.3",
       "SkiaSharp.Views.Forms >= 1.60.3",
-      "Xamarin.Forms >= 3.4.0.1008975",
-      "iTextSharp >= 5.5.13"
+      "Xamarin.Forms >= 3.4.0.1008975"
     ]
   },
   "packageFolders": {
@@ -808,10 +783,6 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.4.0.1008975, )"
-          },
-          "iTextSharp": {
-            "target": "Package",
-            "version": "[5.5.13, )"
           }
         },
         "imports": [
@@ -823,16 +794,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "프로젝트 대상 프레임워크 '.NETStandard,Version=v2.0' 대신 '.NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'iTextSharp 5.5.13'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
-      "libraryId": "iTextSharp",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",
