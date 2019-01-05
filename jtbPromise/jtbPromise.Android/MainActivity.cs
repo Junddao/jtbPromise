@@ -61,7 +61,35 @@ namespace jtbPromise.Droid
             // 권한없는 항목에 대해서 추가 허용을 할지 물어보는 팝업을 띄웁니다.
             ActivityCompat.RequestPermissions(this, permissions.ToArray(), 1);
 
+
+            string fontName = "GodoB.ttf";
+            //string fontName = "SourceHanSerifK-Regular.otf";
+            string fontPath = Path.Combine(CacheDir.AbsolutePath,  fontName);
+            using (var asset = Assets.Open(fontName))
+            using (var dest = File.Open(fontPath, FileMode.Create))
+            {
+                asset.CopyTo(dest);
+            }
+            string customFontPath = fontPath;
         }
 
+
+        public override void OnBackPressed()
+        {
+            Android.App.AlertDialog.Builder builder = new Android.App.AlertDialog.Builder(this);
+
+            builder.SetPositiveButton("확인", (senderAlert, args) => {
+                Finish();
+            });
+
+            builder.SetNegativeButton("취소", (senderAlert, args) => {
+                return;
+            });
+
+            Android.App.AlertDialog alterDialog = builder.Create();
+            alterDialog.SetTitle("알림");
+            alterDialog.SetMessage("프로그램을 종료 하시겠습니까?");
+            alterDialog.Show();
+        }
     }
 }

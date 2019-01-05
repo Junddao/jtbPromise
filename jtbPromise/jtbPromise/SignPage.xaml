@@ -6,13 +6,15 @@
              x:Class="jtbPromise.SignPage">
     <ContentPage.Content>
         <StackLayout Spacing="10">
-            <Label Text="Step 2 .&#10; (싸인하세요.)"
+            <Label Text="Step 2 .&#10; 싸인하세요."
                 FontSize="20"
+                FontAttributes="Bold"
                 HeightRequest="50"
                 VerticalOptions="Start"
                 HorizontalOptions="CenterAndExpand" />
                 
             <Grid 
+                x:Name="gdCanvas"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 BackgroundColor="White">
@@ -33,13 +35,13 @@
             </Grid>
             <Button 
                 x:Name="BtnClear" 
-                Text="Clear"
+                Text="지우기"
                 Grid.Row="0"
                 Margin="50, 5"
                 Clicked="BtnClear_Clicked"/>
             <Button
                 x:Name="BtnNext" 
-                Text="Next"
+                Text="다음"
                 Grid.Row="1"
                 Margin="50, 5"
                 Clicked="BtnNext_Clicked"/>

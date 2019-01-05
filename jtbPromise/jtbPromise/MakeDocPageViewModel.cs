@@ -44,7 +44,7 @@ namespace jtbPromise
                 if (firstPersonName != value)
                 {
                     firstPersonName = value;
-                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n " + writeContent + "할것을 계약합니다.";
+                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n " + writeContent;
                     OnPropertyChanged("FirstPersonName");
                     OnPropertyChanged("Document");
                 }
@@ -62,7 +62,7 @@ namespace jtbPromise
                 if (secondPersonName != value)
                 {
                     secondPersonName = value;
-                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n" + writeContent + "할것을 계약합니다.";
+                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n" + writeContent;
                     OnPropertyChanged("SecondPersonName");
                     OnPropertyChanged("Document");
                 }
@@ -81,7 +81,7 @@ namespace jtbPromise
                 if (writeContent != value)
                 {
                     writeContent = value;
-                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n" + writeContent + "할것을 계약합니다.";
+                    document = "(갑) " + firstPersonName + "은\n(을)" + secondPersonName + "에게 \n" + writeContent;
                     OnPropertyChanged("Document");
                 }
             }

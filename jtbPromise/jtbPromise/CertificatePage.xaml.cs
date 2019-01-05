@@ -24,12 +24,11 @@ namespace jtbPromise
         static string filePath = string.Empty;
 
 
-
         public CertificatePage(string personNumber)
         {
             mPersonNumber = personNumber;
             fileName = mPersonNumber + ".3gp";
-            filePath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath + fileName;
+            filePath = System.IO.Path.Combine(MakeDocPage.folderPathforSave, fileName);
 
             recorder = new MediaRecorder();
             player = new MediaPlayer();

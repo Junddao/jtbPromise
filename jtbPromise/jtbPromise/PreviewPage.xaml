@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="jtbPromise.PreviewPage">
+    
     <ContentPage.Content>
         <StackLayout>
             <Grid 

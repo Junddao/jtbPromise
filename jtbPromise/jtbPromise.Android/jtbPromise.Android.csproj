@@ -78,6 +78,8 @@
     <Compile Include="TouchEffect.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\GodoB.ttf" />
+    <AndroidAsset Include="Assets\SourceHanSerifK-Regular.otf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml">

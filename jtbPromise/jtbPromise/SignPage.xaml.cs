@@ -21,7 +21,6 @@ namespace jtbPromise
         Dictionary<long, FingerPaintPolyline> inProgressPolylines = new Dictionary<long, FingerPaintPolyline>();
         List<FingerPaintPolyline> completedPolylines = new List<FingerPaintPolyline>();
 
-        static string folderPath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath;
         static string fileName = string.Empty;
         static string filePath = string.Empty;
 
@@ -34,7 +33,7 @@ namespace jtbPromise
         {
             Style = SKPaintStyle.Stroke,
             Color = SKColors.Black,
-            StrokeWidth = 2,
+            StrokeWidth = 4,
             StrokeCap = SKStrokeCap.Round,
             StrokeJoin = SKStrokeJoin.Round
         };
@@ -43,7 +42,7 @@ namespace jtbPromise
         {
             mPersonNumber = personNumber;
             fileName = personNumber + ".png";
-            filePath = folderPath + fileName;
+            filePath = System.IO.Path.Combine(MakeDocPage.folderPathforSave, fileName);
 
             InitializeComponent();
         }
@@ -52,6 +51,7 @@ namespace jtbPromise
         {
             completedPolylines.Clear();
             canvasView.InvalidateSurface();
+            UpdateBitmap();
         }
 
         void UpdateBitmap()

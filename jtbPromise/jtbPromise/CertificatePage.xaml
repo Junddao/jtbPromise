@@ -6,24 +6,21 @@
     <ContentPage.Content>
         <StackLayout Spacing="10">
             <Label Text="Step 1"
+                FontAttributes="Bold"
                 FontSize="20"
                 HeightRequest="50"
                 VerticalOptions="Start"
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="1. Record 버튼을 누른채로 본인의 이름을 말하세요.&#10; 2. 손을 때면 녹음이 완료됩니다. &#10; 3. Play 버튼으로 녹음내용을 확인한다."
-                FontSize="10"
-                HeightRequest="50"
-                HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="BtnRecord" Text="Record"
+            <Button x:Name="BtnRecord" Text="버튼을 누른상태로 본인의 이름을 말하세요"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 Pressed="BtnRecord_Pressed" 
                 Released="BtnRecord_Released"/>
-            <Button x:Name="BtnPlay" Text="Play"
+            <Button x:Name="BtnPlay" Text="녹음된 파일 확인하세요"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 Clicked="BtnPlay_Clicked" />
-            <Button x:Name="BtnOK" Text="OK"
+            <Button x:Name="BtnOK" Text="다음"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
                 Clicked="BtnOK_Clicked" />
