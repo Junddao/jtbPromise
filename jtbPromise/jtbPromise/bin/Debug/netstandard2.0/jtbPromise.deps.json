@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "166fae6fe1a98e4dd15f47aeded1f45781357b34"
+    "signature": "b5f7a6d94b086a87ca0bf0cdb2ffbd2447827072"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,6 +13,7 @@
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
+          "Xamarin.Essentials": "1.0.1",
           "Xamarin.Forms": "3.4.0.1008975",
           "Mono.Android": "0.0.0.0"
         },
@@ -80,6 +81,25 @@
           "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
             "assemblyVersion": "1.60.0.0",
             "fileVersion": "1.60.3.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.0.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -170,6 +190,20 @@
       "sha512": "sha512-AwxqM2sskGH0EKCbf1KmKbMq0NEj85k6VuTn8B1ghivCFn2VomsfxtILUsIpSjydE67VdYStVUbn/fEtsHsPgQ==",
       "path": "skiasharp.views.forms/1.60.3",
       "hashPath": "skiasharp.views.forms.1.60.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cGSje2LlYsCdscPt2zAG4e0Zzr08zc21Cj4DAMub3GR37lc/vzAVwGxco8NeCSzcZs147wYbXkFCXwOr4LUO9A==",
+      "path": "xamarin.essentials/1.0.1",
+      "hashPath": "xamarin.essentials.1.0.1.nupkg.sha512"
     },
     "Xamarin.Forms/3.4.0.1008975": {
       "type": "package",

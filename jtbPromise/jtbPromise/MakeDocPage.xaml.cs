@@ -16,15 +16,15 @@ namespace jtbPromise
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MakeDocPage : ContentPage
-	{
-        public static string folderPathforSave = System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath, "jtbPromise", DateTime.Now.ToString("yyyyMMddhhmmss"));
+    public partial class MakeDocPage : ContentPage
+    {
+        public static string folderPathforSave = System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath, "jtbPromise");
 
-        public MakeDocPage ()
-		{
+        public MakeDocPage()
+        {
             InitializeComponent();
 
-            CreateFolder();
+            CreateFolder(MakeDocPage.folderPathforSave);
         }
 
         async void BtnFirstPersonCert_Clicked(object sender, EventArgs e)
@@ -49,30 +49,48 @@ namespace jtbPromise
             return file.Path;
         }
 
-        private void BtnSave_Clicked(object sender, EventArgs e)
+        private async void BtnSave_Clicked(object sender, EventArgs e)
         {
-            
+            // jtbPromise 폴더 서버로 보내고 삭제하기
+            var answer = await DisplayAlert("", "저장하시겠습니까?", "Yes", "No");
+            if(answer)
+            {
+                // 서버로 보내기
+
+
+                // 삭제하기
+                DeleteFolrder(MakeDocPage.folderPathforSave);
+            }
+            else
+            {
+                
+            }
         }
 
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {
+            // jtbPromise 폴더 삭제하기
+            DeleteFolrder(MakeDocPage.folderPathforSave);
+
             await Navigation.PushAsync(new MainPage());
             Navigation.RemovePage(this);
-
         }
 
-        private void CreateFolder()
+        private void CreateFolder(string dirPath)
         {
-            DirectoryInfo dInfo = new DirectoryInfo(MakeDocPage.folderPathforSave);
+            DirectoryInfo dInfo = new DirectoryInfo(dirPath);
             if (dInfo.Exists == false)
             {
                 dInfo.Create();
             }
-            else
+        }
+
+        private void DeleteFolrder(string dirPath)
+        {
+            DirectoryInfo dInfo = new DirectoryInfo(dirPath);
+            if(dInfo.Exists == true)
             {
-                folderPathforSave = System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath, "jtbPromise", DateTime.Now.ToString("yyyyMMddhhmmss"));
-                dInfo = new DirectoryInfo(MakeDocPage.folderPathforSave);
-                dInfo.Create();
+                dInfo.Delete(true);
             }
         }
     }

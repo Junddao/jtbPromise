@@ -11,6 +11,8 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Forms.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Numerics.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Xml.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -21,6 +23,7 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Compat.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Core.UI.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Core.Utils.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.CustomTabs.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Design.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Fragment.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Media.Compat.dll
@@ -32,13 +35,13 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.Palette.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Essentials.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\netstandard.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Data.dll
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Numerics.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.Transactions.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.IO.Compression.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\System.IO.Compression.FileSystem.dll

@@ -34,10 +34,17 @@ namespace jtbPromise
         {
             InitializeComponent();
 
-            mTitle = title;
-            mContent = content;
-            mFirstName = firstName;
-            mSecondName = secondName;
+            try
+            {
+                mTitle = title;
+                mContent = content;
+                mFirstName = firstName;
+                mSecondName = secondName;
+            }
+            catch(Exception)
+            {
+                DisplayAlert("Warning", "서명후 확인하세요.", "OK");
+            }
         }
 
         async void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
@@ -71,7 +78,8 @@ namespace jtbPromise
                 #region Title Draw
                 // Adjust TextSize property so text is 95% of screen width
                 float textWidthTitle = textPaint.MeasureText(mTitle);
-                textPaint.TextSize = 0.3f * info.Width * textPaint.TextSize / textWidthTitle;
+                //textPaint.TextSize = 0.3f * info.Width * textPaint.TextSize / textWidthTitle;
+                textPaint.TextSize = 40f;
 
                 // Find the text bounds
                 SKRect textBoundsTitle = new SKRect();
@@ -82,49 +90,57 @@ namespace jtbPromise
                 float yTextTitle = textBoundsTitle.Height + 50;
 
                 // And draw the text
-
                 canvas.DrawText(mTitle, xTextTitle, yTextTitle, textPaint);
 
                 #endregion
 
+
                 #region Content Draw
+                //갑, 을 이름 Contents 에 추가
+                string NameInContents = "(갑)" + mFirstName + "은/는 (을)" + mSecondName + "에게 \n";
+                mContent = NameInContents + mContent;
+
                 float textWidthContent = textPaint.MeasureText(mContent);
-                textPaint.TextSize = textPaint.TextSize * 0.45f;
+                string[] arrContents = mContent.Split('\n');
+                //textPaint.TextSize = textPaint.TextSize * 0.45f;
+                textPaint.TextSize = 24f;
 
-                SKRect textBoundsContent = new SKRect();
-                textPaint.MeasureText(mContent, ref textBoundsContent);
+                for (int i = 0; i < arrContents.Count(); i++)
+                {
+                    SKRect textBoundsContent = new SKRect();
+                    textPaint.MeasureText(mContent, ref textBoundsContent);
 
-                float xTextContent = info.Width / 2 - textBoundsContent.MidX;
-                float yTextContent = (textBoundsTitle.Height * 2) + textBoundsContent.Height + 70;
+                    float xTextContent = 5;
+                    float yTextContent = (textBoundsTitle.Height * 3) + (textBoundsContent.Height + 20) * (i + 1);
 
-
-
-                canvas.DrawText(mContent, xTextContent, yTextContent, textPaint);
+                    canvas.DrawText(arrContents[i], xTextContent, yTextContent, textPaint);
+                }
                 #endregion
 
-                #region First Name Draw
+
+                #region First Name Draw /  Second Name Draw
                 float textWidthFirstName = textPaint.MeasureText(mFirstName);
 
                 SKRect textBoundsFirstName = new SKRect();
                 textPaint.MeasureText(mFirstName, ref textBoundsFirstName);
 
-                float xTextFirstName = info.Width - (textBoundsFirstName.Width * 2) - 50;
-                float yTextFirstName = info.Height - (textBoundsFirstName.Height * 2) - 100;
+                float xPositionTextFirstName = info.Width - (textBoundsFirstName.Width * 2) - 50;
+                float yPositionTextFirstName = info.Height - (textBoundsFirstName.Height * 2) - 100;
 
-
-                canvas.DrawText(mFirstName, xTextFirstName, yTextFirstName, textPaint);
-                #endregion
-
-                #region Second Name Draw
                 float textWidthSecondName = textPaint.MeasureText(mSecondName);
 
                 SKRect textBoundsSecondName = new SKRect();
                 textPaint.MeasureText(mSecondName, ref textBoundsSecondName);
 
-                float xTextSecondName = info.Width - (textBoundsSecondName.Width * 2) - 50;
-                float yTextSecondName = info.Height - textBoundsSecondName.Height - 50;
+                float xPositionTextSecondName = info.Width - (textBoundsSecondName.Width * 2) - 50;
+                float yPositionTextSecondName = info.Height - textBoundsSecondName.Height - 50;
 
-                canvas.DrawText(mSecondName, xTextSecondName, yTextSecondName, textPaint);
+                float xPosition = 0f;
+                if (xPositionTextFirstName < xPositionTextSecondName) xPosition = xPositionTextFirstName;
+                else xPosition = xPositionTextSecondName;
+
+                canvas.DrawText(mFirstName, xPosition, yPositionTextFirstName, textPaint);
+                canvas.DrawText(mSecondName, xPosition, yPositionTextSecondName, textPaint);
                 #endregion
 
                 int rectWidth = (int)textBoundsFirstName.Height;
@@ -140,12 +156,12 @@ namespace jtbPromise
          
                 var firstPersonResizedImage = bitmapFirstPersonSign.Resize(new SKImageInfo(width, height), SKBitmapResizeMethod.Lanczos3);
                 
-                canvas.DrawBitmap(firstPersonResizedImage, info.Width - rectWidth - 50, yTextFirstName - rectHeight - 25);
+                canvas.DrawBitmap(firstPersonResizedImage, info.Width - rectWidth - 50, yPositionTextFirstName - rectHeight - 25);
 
                 var bitmapSecondPersonSign = SKBitmap.Decode(secondPersonImageFile);
                 var secondPersonResizedImage = bitmapSecondPersonSign.Resize(new SKImageInfo(width, height), SKBitmapResizeMethod.Lanczos3);
 
-                canvas.DrawBitmap(secondPersonResizedImage, info.Width - rectWidth - 50, yTextSecondName - rectHeight - 25);
+                canvas.DrawBitmap(secondPersonResizedImage, info.Width - rectWidth - 50, yPositionTextSecondName - rectHeight - 25);
 
                 saveImage(surface);
             }
@@ -158,7 +174,7 @@ namespace jtbPromise
         async void saveImage(SKSurface _surface)
         {
 
-            string filePath = System.IO.Path.Combine(MakeDocPage.folderPathforSave, mFirstName + "_" + mSecondName + "_" + ".png");
+            string filePath = System.IO.Path.Combine(MakeDocPage.folderPathforSave, mFirstName + "_" + mSecondName + ".png");
             try
             {
                 var surface = SKSurface.Create(

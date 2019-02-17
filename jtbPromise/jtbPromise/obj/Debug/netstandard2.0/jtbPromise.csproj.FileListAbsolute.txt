@@ -27,7 +27,6 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\nets
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csproj.CoreCompileInputs.cache
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.AssemblyInfoInputs.cache
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.AssemblyInfo.cs
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csproj.CopyComplete
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.pdb
