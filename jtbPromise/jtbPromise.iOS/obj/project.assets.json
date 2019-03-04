@@ -810,6 +810,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Dropbox.Api": "4.9.3",
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
@@ -1547,6 +1548,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Dropbox.Api": "4.9.3",
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
@@ -2284,6 +2286,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Dropbox.Api": "4.9.3",
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",
@@ -3021,6 +3024,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Dropbox.Api": "4.9.3",
           "PCLStorage": "1.0.2",
           "SkiaSharp": "1.60.3",
           "SkiaSharp.Views.Forms": "1.60.3",

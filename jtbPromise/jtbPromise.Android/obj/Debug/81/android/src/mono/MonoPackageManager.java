@@ -107,8 +107,10 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "jtbPromise.Android.dll" comes first in this list. */
 		"jtbPromise.Android.dll",
+		"Dropbox.Api.dll",
 		"FormsViewGroup.dll",
 		"jtbPromise.dll",
+		"Newtonsoft.Json.dll",
 		"PCLStorage.Abstractions.dll",
 		"PCLStorage.dll",
 		"SkiaSharp.dll",
