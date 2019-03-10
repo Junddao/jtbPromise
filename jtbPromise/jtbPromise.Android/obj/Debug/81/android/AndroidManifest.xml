@@ -7,6 +7,7 @@
   <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
   <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
   <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+  <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:name="android.app.Application" android:allowBackup="true" android:label="com.companyname.jtbPromise" android:icon="@mipmap/icon" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="jtbPromise" android:theme="@style/MainTheme" android:name="md5eafe3c428655bb19dcff0ca9a9d86116.MainActivity">

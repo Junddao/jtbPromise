@@ -128,7 +128,6 @@ namespace jtbPromise
                     HTC.Timeout = TimeSpan.FromMinutes(10); // set timeout for each ghttp request to Dropbox API.  
                     CC.HttpClient = HTC;
                     DBClient = new DropboxClient(AccessTocken, CC);
-  
                 }
 
                 return _strAccessToken;

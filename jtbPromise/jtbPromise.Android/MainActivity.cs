@@ -48,6 +48,8 @@ namespace jtbPromise.Droid
             checkPermissions.Add(Manifest.Permission.ReadExternalStorage);
             checkPermissions.Add(Manifest.Permission.ReadSms);
             checkPermissions.Add(Manifest.Permission.RecordAudio);  // 오디오 권한 추가
+            checkPermissions.Add(Manifest.Permission.ReadPhoneNumbers);
+            checkPermissions.Add(Manifest.Permission.ReadPhoneState);
 
             // 권한이 있는지 확인하고 없다면 체크할 목록에 추가합니다.
             foreach (var checkPermission in checkPermissions)

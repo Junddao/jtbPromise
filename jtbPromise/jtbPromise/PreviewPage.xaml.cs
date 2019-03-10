@@ -79,7 +79,7 @@ namespace jtbPromise
                 // Adjust TextSize property so text is 95% of screen width
                 float textWidthTitle = textPaint.MeasureText(mTitle);
                 //textPaint.TextSize = 0.3f * info.Width * textPaint.TextSize / textWidthTitle;
-                textPaint.TextSize = 40f;
+                textPaint.TextSize = 50f;
 
                 // Find the text bounds
                 SKRect textBoundsTitle = new SKRect();
@@ -103,7 +103,7 @@ namespace jtbPromise
                 float textWidthContent = textPaint.MeasureText(mContent);
                 string[] arrContents = mContent.Split('\n');
                 //textPaint.TextSize = textPaint.TextSize * 0.45f;
-                textPaint.TextSize = 24f;
+                textPaint.TextSize = 32f;
 
                 for (int i = 0; i < arrContents.Count(); i++)
                 {

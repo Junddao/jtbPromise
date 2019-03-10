@@ -1,5 +1,6 @@
 ﻿//using iTextSharp.text;
 //using iTextSharp.text.pdf;
+using Android.Telephony;
 using Dropbox.Api;
 using Dropbox.Api.Files;
 using Dropbox.Api.Stone;
@@ -34,6 +35,8 @@ namespace jtbPromise
             InitializeComponent();
 
             CreateFolder(MakeDocPage.folderPathforSave);
+
+           
         }
 
         async void BtnFirstPersonCert_Clicked(object sender, EventArgs e)
@@ -58,6 +61,13 @@ namespace jtbPromise
             return file.Path;
         }
 
+        public string GetPhoneNumber()
+        {
+
+            string PhoneNumber = DependencyService.Get<PhoneNumberInterface>().GetPhoneNumber();
+            return PhoneNumber;
+        }
+
         private async void BtnSave_Clicked(object sender, EventArgs e)
         {
             // jtbPromise 폴더 서버로 보내고 삭제하기
@@ -66,16 +76,17 @@ namespace jtbPromise
             {
                 if (answer)
                 {
-                    // 서버로 보내기
 
-                    
+                    string folderName = GetPhoneNumber();
+
+                    // 서버로 보내기
                     cDropbox = new CDropBox();
                     strAuthenticationURL = cDropbox.GeneratedAuthenticationURL();
                     strAccessToken = cDropbox.GenerateAccessToken();
 
-                    if (cDropbox.FolderExists("/Dropbox/jtbPromise") == false)
+                    if (cDropbox.FolderExists("/Dropbox/jtbPromise/" + folderName) == false)
                     {
-                        cDropbox.CreateFolder("/Dropbox/jtbPromise");
+                        cDropbox.CreateFolder("/Dropbox/jtbPromise/" + folderName);
                     }
 
                     List<string> liFiles = new List<string>();
@@ -83,10 +94,9 @@ namespace jtbPromise
                     
                     foreach (var s in di.GetFiles())
                     {
-                        cDropbox.Upload("/Dropbox/jtbPromise", s.Name, s.FullName);
+                        cDropbox.Upload("/Dropbox/jtbPromise/" + folderName, s.Name, s.FullName);
                     }
                     
-
                     // 삭제하기
                     DeleteFolrder(MakeDocPage.folderPathforSave);
                 }
