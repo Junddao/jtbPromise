@@ -84,10 +84,13 @@ namespace jtbPromise
                     strAuthenticationURL = cDropbox.GeneratedAuthenticationURL();
                     strAccessToken = cDropbox.GenerateAccessToken();
 
-                    if (cDropbox.FolderExists("/Dropbox/jtbPromise/" + folderName) == false)
+                    if (cDropbox.FolderExists("/Dropbox/jtbPromise/" + folderName) == true)
                     {
-                        cDropbox.CreateFolder("/Dropbox/jtbPromise/" + folderName);
+                        cDropbox.Delete("/Dropbox/jtbPromise/" + folderName);
                     }
+                    cDropbox.CreateFolder("/Dropbox/jtbPromise/" + folderName);
+
+
 
                     List<string> liFiles = new List<string>();
 

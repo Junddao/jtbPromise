@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace jtbPromise
@@ -196,6 +197,21 @@ namespace jtbPromise
             }
         }
 
+        
+        public async Task<IList<Metadata>> ListFiles(string path)
+        {
+            try
+            {
+                var list = await DBClient.Files.ListFolderAsync(path);
+                return list?.Entries;
+                
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         /// <summary>  
         /// Method to delete file/folder from Dropbox  
         /// </summary>  
@@ -214,7 +230,7 @@ namespace jtbPromise
                     throw new Exception("AuthenticationURI not generated !");
                 }
 
-                var folders = DBClient.Files.DeleteAsync(path);
+                var folders = DBClient.Files.DeleteV2Async(path);
                 var result = folders.Result;
                 return true;
             }
