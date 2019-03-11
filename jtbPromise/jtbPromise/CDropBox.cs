@@ -3,6 +3,7 @@ using Dropbox.Api.Files;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -197,14 +198,12 @@ namespace jtbPromise
             }
         }
 
-        
         public async Task<IList<Metadata>> ListFiles(string path)
         {
             try
             {
                 var list = await DBClient.Files.ListFolderAsync(path);
                 return list?.Entries;
-                
             }
             catch (Exception)
             {

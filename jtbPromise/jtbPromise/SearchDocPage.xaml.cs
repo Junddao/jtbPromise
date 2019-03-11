@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dropbox.Api.Files;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -17,18 +18,19 @@ namespace jtbPromise
         string strAuthenticationURL = string.Empty;
         string strAccessToken = string.Empty;
 
+        CSearchFileViewModel searchFileViewModel = new CSearchFileViewModel();
 
-        ObservableCollection<CFiles> files = new ObservableCollection<CFiles>();
 
         public SearchDocPage ()
 		{
 			InitializeComponent ();
-		}
+            DocView.ItemsSource = searchFileViewModel.Files;
+
+            CheckFileList();
+        }
 
         public async void CheckFileList()
         {
-            
-            DocView.ItemsSource = files;
 
             string folderName = GetPhoneNumber();
 
@@ -36,24 +38,34 @@ namespace jtbPromise
             strAuthenticationURL = cDropbox.GeneratedAuthenticationURL();
             strAccessToken = cDropbox.GenerateAccessToken();
 
-            if(cDropbox.FolderExists("/Dropbox/jtbPromise/" + folderName) == false)
+            if(cDropbox.FolderExists("/Dropbox/jtbPromise/" + folderName) == true)
             {
-                //List<string> liFiles =  await cDropbox.ListFiles("/Dropbox/jtbPromise/" + folderName);
+                IList<Metadata> IliFiles = await cDropbox.ListFiles("/Dropbox/jtbPromise/" + folderName);
+                List<string> liFiles = new List<string>();
+                foreach(var file in IliFiles)
+                {
+                    if ((file.Name.Contains("first") || file.Name.Contains("second")) == false)
+                    {
+                        searchFileViewModel.Files.Add(new CSearchFile()
+                        {
+                            FileName = file.Name
+                        });
+                    }
+                }
+            }
+            else
+            {
+                searchFileViewModel.Files.Add(new CSearchFile()
+                {
+                    FileName = "No Itemes."
+                });
             }
         }
 
-
         public string GetPhoneNumber()
         {
-
             string PhoneNumber = DependencyService.Get<PhoneNumberInterface>().GetPhoneNumber();
             return PhoneNumber;
         }
-
-    }
-
-    public class CFiles
-    {
-        public string DisplayFileName { get; set; }
     }
 }

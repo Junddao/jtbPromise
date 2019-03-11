@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnCreateOffLine" Text="Create Doc (Offline)" Clicked="BtnCreateOffLine_Clicked" />
-        <Button x:Name="btnCreateOnLine" Text="Create Doc (Online)" Grid.Row="1" Clicked="BtnSearch_Clicked"/>
-        <Button x:Name="btnSearch" Text="Search" Grid.Row="2"/>
+        <Button x:Name="btnCreateOnLine" Text="Create Doc (Online)" Grid.Row="1"/>
+        <Button x:Name="btnSearch" Text="Search" Grid.Row="2" Clicked="BtnSearch_Clicked"/>
     </Grid>
 </ContentPage>
