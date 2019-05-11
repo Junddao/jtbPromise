@@ -97,8 +97,10 @@ namespace jtbPromise
 
                 #region Content Draw
                 //갑, 을 이름 Contents 에 추가
+                mContent = txt_split(mContent, 20);
                 string NameInContents = "(갑)" + mFirstName + "은/는 (을)" + mSecondName + "에게 \n";
                 mContent = NameInContents + mContent;
+                
 
                 float textWidthContent = textPaint.MeasureText(mContent);
                 string[] arrContents = mContent.Split('\n');
@@ -110,8 +112,8 @@ namespace jtbPromise
                     SKRect textBoundsContent = new SKRect();
                     textPaint.MeasureText(mContent, ref textBoundsContent);
 
-                    float xTextContent = 5;
-                    float yTextContent = (textBoundsTitle.Height * 3) + (textBoundsContent.Height + 20) * (i + 1);
+                    float xTextContent = 10;
+                    float yTextContent = (textBoundsTitle.Height * 3 + 50) + (textBoundsContent.Height + 20) * (i + 1);
 
                     canvas.DrawText(arrContents[i], xTextContent, yTextContent, textPaint);
                 }
@@ -169,6 +171,36 @@ namespace jtbPromise
             {
                 await DisplayAlert("Alert", "필수 항목을 모두 입력하세요.", "OK");
             }
+        }
+
+        public string txt_split(string s_str, int str_cnt)
+        {
+            string r_str = "";
+
+            string[] s_split = s_str.Split('\n');
+
+            for (int i = 0; i < s_split.Length; i++)
+            {
+                if (s_split[i].Length > str_cnt)
+                {
+                    if (i <= 0)
+                    {
+                        r_str += txt_split(s_str.Insert(str_cnt, "\n"), str_cnt);
+
+                    }
+                    else
+                    {
+                        r_str += txt_split(s_split[i].Insert(str_cnt, "\n"), str_cnt);
+                    }
+
+                }
+                else
+                {
+                    r_str += s_split[i] + "\n";
+                }
+
+            }
+            return r_str;
         }
 
         async void saveImage(SKSurface _surface)

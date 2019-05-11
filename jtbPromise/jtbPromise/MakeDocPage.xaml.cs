@@ -102,6 +102,9 @@ namespace jtbPromise
                     
                     // 삭제하기
                     DeleteFolrder(MakeDocPage.folderPathforSave);
+
+                    await Navigation.PushAsync(new MainPage());
+                    Navigation.RemovePage(this);
                 }
                 else
                 {
@@ -114,83 +117,6 @@ namespace jtbPromise
             }
             
         }
-
-
-        //async public void ListingFileInDropBox()
-        //{
-        //    using (DropboxClient client = new DropboxClient(_accessKey))
-        //    {
-        //        try
-        //        {
-        //            bool more = true;
-        //            var list = await client.Files.ListFolderAsync("");
-        //            while (more)
-        //            {
-        //                foreach (var item in list.Entries.Where(i => i.IsFile))
-        //                {
-        //                    // Process the file
-        //                }
-        //                more = list.HasMore;
-        //                if (more)
-        //                {
-        //                    list = await client.Files.ListFolderContinueAsync(list.Cursor);
-        //                }
-        //            }
-        //        }
-        //        catch
-        //        {
-        //            // Process the exception
-        //        }
-        //    }
-        //}
-
-        //public async Task DownloadFileInDropbox(string filename)
-        //{
-        //    using (DropboxClient client = new DropboxClient(_accessKey))
-        //    {
-        //        IDownloadResponse<FileMetadata> resp =
-        //            await client.Files.DownloadAsync(filename);
-        //        Stream ds = await resp.GetContentAsStreamAsync();
-        //        await ds.CopyToAsync(s);
-        //        ds.Dispose();
-        //    }
-        //}
-
-        //public async Task UploadFileInDropbox(string filename)
-        //{
-        //    using (DropboxClient client = new DropboxClient(_accessKey))
-        //    {
-        //        var UploadResponse = await client.Files.UploadAsync(filename);
-
-        //    }
-        //}
-
-        //public bool Upload(string UploadfolderPath, string UploadfileName, string SourceFilePath)
-        //{
-        //    try
-        //    {
-        //        using (var stream = new MemoryStream(File.ReadAllBytes(SourceFilePath)))
-        //        {
-        //            var response = DBClient.Files.UploadAsync(UploadfolderPath + "/" + UploadfileName, WriteMode.Overwrite.Instance, body: stream);
-        //            var rest = response.Result; //Added to wait for the result from Async method  
-        //        }
-
-        //        return true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return false;
-        //    }
-
-        //}
-
-        //public async Task DeleteFileInDropbox(string filename)
-        //{
-        //    using (DropboxClient client = new DropboxClient(_accessKey))
-        //    {
-        //        await client.Files.DeleteAsync(filename);
-        //    }
-        //}
 
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {

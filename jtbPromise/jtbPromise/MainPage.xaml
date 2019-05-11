@@ -2,17 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:jtbPromise"
-             x:Class="jtbPromise.MainPage">
+             x:Class="jtbPromise.MainPage"
+             Title="jtb Promise">
 
-    <!-- Place new controls here -->
-    <Grid>
+
+        <!-- Place new controls here -->
+    <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnCreateOffLine" Text="Create Doc (Offline)" Clicked="BtnCreateOffLine_Clicked" />
-        <Button x:Name="btnCreateOnLine" Text="Create Doc (Online)" Grid.Row="1"/>
-        <Button x:Name="btnSearch" Text="Search" Grid.Row="2" Clicked="BtnSearch_Clicked"/>
+        <Button x:Name="btnCreateOffLine" Text="만나서 계약서 작성"
+                Style="{StaticResource BtnStyle}"
+                FontSize="36"
+                Clicked="BtnCreateOffLine_Clicked" />
+               
+        
+        <Button x:Name="btnCreateOnLine" Text="온라인 계약서 작성"
+                Style="{StaticResource BtnStyle}"
+                FontSize="36"
+                Grid.Row="1" Clicked="BtnCreateOnLine_Clicked"/>
+        
+        <Button x:Name="btnSearch" Text="내 계약서 검색"
+                Style="{StaticResource BtnStyle}"
+                FontSize="36"
+                Grid.Row="2" Clicked="BtnSearch_Clicked"/>
     </Grid>
 </ContentPage>

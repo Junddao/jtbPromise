@@ -2,28 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:jtbPromise"
-             x:Class="jtbPromise.CertificatePage">
+             x:Class="jtbPromise.CertificatePage"
+             Title="Step 1">
     <ContentPage.Content>
         <StackLayout Spacing="10">
-            <Label Text="Step 1"
-                FontAttributes="Bold"
-                FontSize="20"
-                HeightRequest="50"
-                VerticalOptions="Start"
-                HorizontalOptions="CenterAndExpand" />
             <Button x:Name="BtnRecord" Text="버튼을 누른상태로 본인의 이름을 말하세요"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
+                    Style="{StaticResource BtnStyle}"
                 Pressed="BtnRecord_Pressed" 
                 Released="BtnRecord_Released"/>
             <Button x:Name="BtnPlay" Text="녹음된 파일 확인하세요"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
+                    Style="{StaticResource BtnStyle}"
                 Clicked="BtnPlay_Clicked" />
             <Button x:Name="BtnOK" Text="다음"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 
-                Clicked="BtnOK_Clicked" />
+                    Style="{StaticResource BtnStyle}" 
+                    Clicked="BtnOK_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

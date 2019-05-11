@@ -28,6 +28,9 @@ namespace jtbPromise
             await Navigation.PushAsync(new SearchDocPage(), false);
         }
 
+        private void BtnCreateOnLine_Clicked(object sender, EventArgs e)
+        {
 
+        }
     }
 }

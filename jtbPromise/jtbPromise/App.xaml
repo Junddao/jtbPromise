@@ -3,6 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jtbPromise.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BtnStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BorderRadius" Value="0"/>
+            </Style>
+            <Style x:Key="LbStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
 
+            </Style>
+            <!--<Setter Property="HeightRequest" Value="42"/>
+            <Setter Property="BorderRadius" Value="5"/>
+            <Setter Property="BorderWidth" Value="0" />-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

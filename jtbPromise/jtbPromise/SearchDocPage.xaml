@@ -18,13 +18,13 @@
                                     <ColumnDefinition Width="1*"/>
                                     <ColumnDefinition Width="1*"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="0" Text="{Binding FileName}"></Label>
+                                <Label Grid.Column="0" VerticalOptions="Center" Text="{Binding FileName}" Style="{StaticResource LbStyle}"></Label>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Grid.Row="1" x:Name="btnDownload" Text="Download"/>
+            <Button Grid.Row="1" x:Name="btnDownload" Text="Download" Style="{StaticResource BtnStyle}"/>
         </Grid>
         
     </ContentPage.Content>
