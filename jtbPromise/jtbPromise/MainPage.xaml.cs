@@ -1,9 +1,12 @@
-﻿using System;
+﻿using jtbPromise.Controls;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xam.FormsPlugin.Abstractions;
 using Xamarin.Forms;
 
 
@@ -15,6 +18,21 @@ namespace jtbPromise
         public MainPage()
         {
             InitializeComponent();
+
+            AdmobControl admobControl = new AdmobControl()
+            {
+                AdUnitId = AppConstants.BannerId
+            };
+            Label adLabel = new Label() { Text = "Ads will be displayed here!" };
+
+            Button showInterstitialAdsButton = new Button();
+            showInterstitialAdsButton.Clicked += ShowInterstitialAdsButton_Clicked;
+            showInterstitialAdsButton.Text = "Show Interstitial Ads";
+
+            Content = new StackLayout()
+            {
+                Children = { adLabel, admobControl, showInterstitialAdsButton }
+            };
 
         }
         async void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)
@@ -30,7 +48,16 @@ namespace jtbPromise
 
         private void BtnCreateOnLine_Clicked(object sender, EventArgs e)
         {
+            //playAds();
+        }
 
+        async void ShowInterstitialAdsButton_Clicked(object sender, EventArgs e)
+        {
+            if (AppConstants.ShowAds)
+            {
+                await DependencyService.Get<IAdmobInterstitialAds>().Display(AppConstants.InterstitialAdId);
+            }
+            Debug.WriteLine("Continue button click implementation");
         }
     }
 }

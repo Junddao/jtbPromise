@@ -12,6 +12,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button x:Name="btnCreateOffLine" Text="만나서 계약서 작성"
                 Style="{StaticResource BtnStyle}"
@@ -28,5 +29,6 @@
                 Style="{StaticResource BtnStyle}"
                 FontSize="36"
                 Grid.Row="2" Clicked="BtnSearch_Clicked"/>
+
     </Grid>
 </ContentPage>

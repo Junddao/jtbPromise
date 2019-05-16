@@ -107,6 +107,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "jtbPromise.Android.dll" comes first in this list. */
 		"jtbPromise.Android.dll",
+		"AdMobView.FormsPlugin.Abstractions.dll",
+		"AdMobView.FormsPlugin.Android.dll",
 		"Dropbox.Api.dll",
 		"FormsViewGroup.dll",
 		"jtbPromise.dll",
@@ -141,6 +143,14 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Xamarin.GooglePlayServices.Ads.dll",
+		"Xamarin.GooglePlayServices.Ads.Lite.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Gass.dll",
+		"Xamarin.GooglePlayServices.Gcm.dll",
+		"Xamarin.GooglePlayServices.Iid.dll",
+		"Xamarin.GooglePlayServices.Tasks.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

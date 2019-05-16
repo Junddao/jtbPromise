@@ -77,6 +77,7 @@ namespace jtbPromise
                 if (answer)
                 {
 
+
                     string folderName = GetPhoneNumber();
 
                     // 서버로 보내기
@@ -117,6 +118,7 @@ namespace jtbPromise
             }
             
         }
+
 
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {

@@ -135,7 +135,7 @@
           "lib/net45/PCLStorage.dll": {}
         }
       },
-      "SkiaSharp/1.60.3": {
+      "SkiaSharp/1.68.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.3/SkiaSharp.dll": {}
@@ -156,21 +156,21 @@
             "assetType": "native",
             "rid": "tizen-x86"
           },
-          "runtimes/win7-x64/native/libSkiaSharp.dll": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
             "assetType": "native",
-            "rid": "win7-x64"
+            "rid": "win-x64"
           },
-          "runtimes/win7-x86/native/libSkiaSharp.dll": {
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
             "assetType": "native",
-            "rid": "win7-x86"
+            "rid": "win-x86"
           }
         }
       },
-      "SkiaSharp.Views.Forms/1.60.3": {
+      "SkiaSharp.Views.Forms/1.68.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "1.60.3",
-          "Xamarin.Forms": "2.5.0.280555"
+          "SkiaSharp": "1.68.0",
+          "Xamarin.Forms": "3.3.0.912540"
         },
         "compile": {
           "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {}
@@ -765,7 +765,19 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Xamarin.Essentials/1.0.1": {
+      "Xam.FormsPlugin.AdMobView/1.0.23": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "1.3.1.6296"
+        },
+        "compile": {
+          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
+        }
+      },
+      "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -777,7 +789,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/3.4.0.1008975": {
+      "Xamarin.Forms/3.6.0.344457": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -1276,10 +1288,10 @@
         "pclstorage.nuspec"
       ]
     },
-    "SkiaSharp/1.60.3": {
-      "sha512": "9L8luXSspkXMhRuBx7CPjEVNJ2CJljpc5XMkDUITCQnhuJJadyCwYSWcAsgEqeRqmAimI2TyJWu73BRsvKTFZg==",
+    "SkiaSharp/1.68.0": {
+      "sha512": "ptuxAKk9FiClNnAgWM8hVMCYw/B0hUJWZ8W6efnIAtJmJn/Xl4jvxxDF5WOqfQYCLVzxXw5gvBPVxvTLblFp0g==",
       "type": "package",
-      "path": "skiasharp/1.60.3",
+      "path": "skiasharp/1.68.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1308,6 +1320,8 @@
         "runtimes/osx/native/libSkiaSharp.dylib",
         "runtimes/tizen-armel/native/libSkiaSharp.so",
         "runtimes/tizen-x86/native/libSkiaSharp.so",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
         "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
         "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
         "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
@@ -1317,17 +1331,15 @@
         "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
-        "runtimes/win7-x64/native/libSkiaSharp.dll",
-        "runtimes/win7-x86/native/libSkiaSharp.dll",
-        "skiasharp.1.60.3.nupkg.sha512",
+        "skiasharp.1.68.0.nupkg.sha512",
         "skiasharp.nuspec",
         "xamarin.interactive/SkiaSharp.Workbooks.dll"
       ]
     },
-    "SkiaSharp.Views.Forms/1.60.3": {
-      "sha512": "AwxqM2sskGH0EKCbf1KmKbMq0NEj85k6VuTn8B1ghivCFn2VomsfxtILUsIpSjydE67VdYStVUbn/fEtsHsPgQ==",
+    "SkiaSharp.Views.Forms/1.68.0": {
+      "sha512": "VqxL96ywOA9HUj1MAEO6yvSzg4Tk03ZHvvxQFhbUKgCodDxk9lIUxmBcssTZ/wYjOUn9R2Lf/VIpDMQZlhVh/A==",
       "type": "package",
-      "path": "skiasharp.views.forms/1.60.3",
+      "path": "skiasharp.views.forms/1.68.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1344,7 +1356,7 @@
         "lib/tizen40/SkiaSharp.Views.Forms.xml",
         "lib/uap10.0/SkiaSharp.Views.Forms.dll",
         "lib/uap10.0/SkiaSharp.Views.Forms.xml",
-        "skiasharp.views.forms.1.60.3.nupkg.sha512",
+        "skiasharp.views.forms.1.68.0.nupkg.sha512",
         "skiasharp.views.forms.nuspec"
       ]
     },
@@ -3611,13 +3623,47 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.0.1": {
-      "sha512": "cGSje2LlYsCdscPt2zAG4e0Zzr08zc21Cj4DAMub3GR37lc/vzAVwGxco8NeCSzcZs147wYbXkFCXwOr4LUO9A==",
+    "Xam.FormsPlugin.AdMobView/1.0.23": {
+      "sha512": "wwrvJcu5Kc7ZqshfWTzXpUqXmsHyERwKMn7ukDOgRfMvLHYEzN4dg2KRnfZnRX1dmsb7Cd5Aiv/EaFNAwUT9vQ==",
       "type": "package",
-      "path": "xamarin.essentials/1.0.1",
+      "path": "xam.formsplugin.admobview/1.0.23",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "content/MonoAndroid10/readme.txt",
+        "content/wp8/Renderers/AdMobViewRenderer.cs",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.dll",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.pdb",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.xml",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.dll",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.pdb",
+        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.xml",
+        "lib/MonoAndroid10/Xamarin.GooglePlayServices.Ads.dll",
+        "lib/MonoAndroid10/Xamarin.GooglePlayServices.Base.dll",
+        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll",
+        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.pdb",
+        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.xml",
+        "lib/wp8/AdMobView.FormsPlugin.Abstractions.dll",
+        "lib/wp8/AdMobView.FormsPlugin.Abstractions.pdb",
+        "lib/wp8/AdMobView.FormsPlugin.Abstractions.xml",
+        "lib/wp8/GoogleAds.dll",
+        "xam.formsplugin.admobview.1.0.23.nupkg.sha512",
+        "xam.formsplugin.admobview.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.1.0": {
+      "sha512": "W0XOt1dNMAE2POcsVotoKDDy5FdAOnR0qULKl6WI4kQEMxQ1sp84DsSU5iacV7oQUMuPhUBAm/3ywks0HO1QrQ==",
+      "type": "package",
+      "path": "xamarin.essentials/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid60/Xamarin.Essentials.dll",
+        "lib/monoandroid60/Xamarin.Essentials.pdb",
+        "lib/monoandroid60/Xamarin.Essentials.xml",
+        "lib/monoandroid70/Xamarin.Essentials.dll",
+        "lib/monoandroid70/Xamarin.Essentials.pdb",
+        "lib/monoandroid70/Xamarin.Essentials.xml",
         "lib/monoandroid71/Xamarin.Essentials.dll",
         "lib/monoandroid71/Xamarin.Essentials.pdb",
         "lib/monoandroid71/Xamarin.Essentials.xml",
@@ -3627,6 +3673,9 @@
         "lib/monoandroid81/Xamarin.Essentials.dll",
         "lib/monoandroid81/Xamarin.Essentials.pdb",
         "lib/monoandroid81/Xamarin.Essentials.xml",
+        "lib/monoandroid90/Xamarin.Essentials.dll",
+        "lib/monoandroid90/Xamarin.Essentials.pdb",
+        "lib/monoandroid90/Xamarin.Essentials.xml",
         "lib/netstandard1.0/Xamarin.Essentials.dll",
         "lib/netstandard1.0/Xamarin.Essentials.pdb",
         "lib/netstandard1.0/Xamarin.Essentials.xml",
@@ -3641,29 +3690,30 @@
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.0.1.nupkg.sha512",
+        "xamarin.essentials.1.1.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/3.4.0.1008975": {
-      "sha512": "036/h8HtzRFgTrfhY57IeHoYRsPTO2XTA6uUFdmZzw2QR1sdszfofhI9HrCJTRx6fCzmjPg5Cxk5chYrjKarNw==",
+    "Xamarin.Forms/3.6.0.344457": {
+      "sha512": "7IffIKgL0fmgbfCLKzXaFKJ7uOueKiz/BIgmAG1Z5WMn+vMKeALe5GgRs3Uddo670VzllIHWkNEZD3lG+e02bw==",
       "type": "package",
-      "path": "xamarin.forms/3.4.0.1008975",
+      "path": "xamarin.forms/3.6.0.344457",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "build/MonoAndroid10/proguard.cfg",
         "build/Xamarin.Forms.DefaultItems.props",
         "build/Xamarin.Forms.DefaultItems.targets",
         "build/Xamarin.Forms.props",
         "build/Xamarin.Forms.targets",
-        "build/net461/Mono.Cecil.Mdb.dll",
-        "build/net461/Mono.Cecil.Pdb.dll",
-        "build/net461/Mono.Cecil.Rocks.dll",
-        "build/net461/Mono.Cecil.dll",
-        "build/net461/System.CodeDom.dll",
-        "build/net461/Xamarin.Forms.Build.Tasks.dll",
-        "build/net461/Xamarin.Forms.Core.dll",
-        "build/net461/Xamarin.Forms.Xaml.dll",
+        "build/net46/Mono.Cecil.Mdb.dll",
+        "build/net46/Mono.Cecil.Pdb.dll",
+        "build/net46/Mono.Cecil.Rocks.dll",
+        "build/net46/Mono.Cecil.dll",
+        "build/net46/System.ValueTuple.dll",
+        "build/net46/Xamarin.Forms.Build.Tasks.dll",
+        "build/net46/Xamarin.Forms.Core.dll",
+        "build/net46/Xamarin.Forms.Xaml.dll",
         "build/netstandard2.0/Mono.Cecil.Mdb.dll",
         "build/netstandard2.0/Mono.Cecil.Pdb.dll",
         "build/netstandard2.0/Mono.Cecil.Rocks.dll",
@@ -3672,19 +3722,32 @@
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid10/FormsViewGroup.dll",
-        "lib/MonoAndroid10/FormsViewGroup.pdb",
-        "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid81/FormsViewGroup.dll",
+        "lib/MonoAndroid81/FormsViewGroup.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid90/FormsViewGroup.dll",
+        "lib/MonoAndroid90/FormsViewGroup.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
@@ -3768,8 +3831,10 @@
         "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/uap10.0/Xamarin.Forms.Core.dll",
+        "lib/uap10.0/Xamarin.Forms.Core.pdb",
         "lib/uap10.0/Xamarin.Forms.Core.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
@@ -3777,17 +3842,20 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.4.0.1008975.nupkg.sha512",
+        "xamarin.forms.3.6.0.344457.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
@@ -3797,10 +3865,11 @@
       "Dropbox.Api >= 4.9.3",
       "NETStandard.Library >= 2.0.3",
       "PCLStorage >= 1.0.2",
-      "SkiaSharp >= 1.60.3",
-      "SkiaSharp.Views.Forms >= 1.60.3",
-      "Xamarin.Essentials >= 1.0.1",
-      "Xamarin.Forms >= 3.4.0.1008975"
+      "SkiaSharp >= 1.68.0",
+      "SkiaSharp.Views.Forms >= 1.68.0",
+      "Xam.FormsPlugin.AdMobView >= 1.0.23",
+      "Xamarin.Essentials >= 1.1.0",
+      "Xamarin.Forms >= 3.6.0.344457"
     ]
   },
   "packageFolders": {
@@ -3860,19 +3929,23 @@
           },
           "SkiaSharp": {
             "target": "Package",
-            "version": "[1.60.3, )"
+            "version": "[1.68.0, )"
           },
           "SkiaSharp.Views.Forms": {
             "target": "Package",
-            "version": "[1.60.3, )"
+            "version": "[1.68.0, )"
+          },
+          "Xam.FormsPlugin.AdMobView": {
+            "target": "Package",
+            "version": "[1.0.23, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.0.1, )"
+            "version": "[1.1.0, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.4.0.1008975, )"
+            "version": "[3.6.0.344457, )"
           }
         },
         "imports": [
@@ -3910,6 +3983,16 @@
       "warningLevel": 1,
       "message": "프로젝트 대상 프레임워크 '.NETStandard,Version=v2.0' 대신 '.NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'PCLStorage 1.0.2'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
       "libraryId": "PCLStorage",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "프로젝트 대상 프레임워크 '.NETStandard,Version=v2.0' 대신 '.NETFramework,Version=v4.6.1'을(를) 사용하여 패키지 'Xam.FormsPlugin.AdMobView 1.0.23'을(를) 복원했습니다. 이 패키지는 프로젝트와 완벽하게 호환되지 않을 수 있습니다.",
+      "libraryId": "Xam.FormsPlugin.AdMobView",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
       ]
