@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.jtbPromise" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
   <uses-permission android:name="android.permission.RECORD_AUDIO" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -10,10 +10,9 @@
   <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:name="android.app.Application" android:allowBackup="true" android:label="com.companyname.jtbPromise" android:icon="@mipmap/icon" android:debuggable="true">
-    <!--<activity 
-      android:name="com.google.android.gms.ads.AdActivity"
-      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>-->
+  <application android:name="android.app.Application" android:allowBackup="true" android:label="com.companyname.jtbPromise" android:debuggable="true">
+    <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9695790043722201~7112862903" />
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="jtbPromise" android:theme="@style/MainTheme" android:name="md5eafe3c428655bb19dcff0ca9a9d86116.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

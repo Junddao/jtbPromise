@@ -70,7 +70,7 @@ namespace jtbPromise
         }
 
 
-        async void Handle_Clicked(object sender, System.EventArgs e)
+        async private void BtnDownload_Clicked(object sender, EventArgs e)
         {
             if (AppConstants.ShowAds)
             {

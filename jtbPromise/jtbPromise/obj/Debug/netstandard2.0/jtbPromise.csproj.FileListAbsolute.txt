@@ -18,6 +18,7 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\nets
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\Mono.Android.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\Mono.Android.pdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csprojAssemblyReference.cache
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\CertificatePage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -32,4 +33,3 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\nets
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csproj.CopyComplete
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.pdb
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Debug\netstandard2.0\jtbPromise.csprojAssemblyReference.cache
