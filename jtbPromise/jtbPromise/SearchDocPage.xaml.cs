@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,16 @@ namespace jtbPromise
         {
             string PhoneNumber = DependencyService.Get<PhoneNumberInterface>().GetPhoneNumber();
             return PhoneNumber;
+        }
+
+
+        async void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            if (AppConstants.ShowAds)
+            {
+                await DependencyService.Get<IAdmobInterstitialAds>().Display(AppConstants.InterstitialAdId);
+            }
+            Debug.WriteLine("Continue button click implementation");
         }
     }
 }
