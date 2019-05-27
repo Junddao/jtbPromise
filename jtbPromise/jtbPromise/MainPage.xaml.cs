@@ -19,20 +19,14 @@ namespace jtbPromise
         {
             InitializeComponent();
 
-            AdmobControl admobControl = new AdmobControl()
-            {
-                AdUnitId = AppConstants.BannerId
-            };
-            Label adLabel = new Label() { Text = "Ads will be displayed here!" };
+            //AdmobControl admobControl = new AdmobControl()
+            //{
+            //    AdUnitId = AppConstants.BannerId
+            //};
+            //Label adLabel = new Label() { Text = "Ads will be displayed here!" };
 
-            Button showInterstitialAdsButton = new Button();
-            showInterstitialAdsButton.Clicked += ShowInterstitialAdsButton_Clicked;
-            showInterstitialAdsButton.Text = "Show Interstitial Ads";
-
-            Content = new StackLayout()
-            {
-                Children = { adLabel, admobControl, showInterstitialAdsButton }
-            };
+            //Content = admobControl;
+            //this.BindingContext = new AppConstants();
 
         }
         async void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)

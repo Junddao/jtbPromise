@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:jtbPromise"
+             xmlns:local="clr-namespace:jtbPromise.Controls"
+             xmlns:data="clr-namespace:jtbPromise"
              x:Class="jtbPromise.MainPage"
              Title="jtb Promise">
 
@@ -30,5 +31,6 @@
                 FontSize="36"
                 Grid.Row="2" Clicked="BtnSearch_Clicked"/>
 
+        <local:AdmobControl AdUnitId="{x:Static data:AppConstants.BannerId}"  Grid.Row="3" VerticalOptions="EndAndExpand"/>
     </Grid>
 </ContentPage>
