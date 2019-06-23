@@ -13,26 +13,6 @@ namespace jtbPromise
         string writeContent = string.Empty;
         string document = string.Empty;
 
-
-        public string Title
-        {
-            get
-            {
-                return title;
-            }
-            set
-            {
-                if (title != value)
-                {
-                    title = value;
-
-                    OnPropertyChanged("Title");
-                }
-            }
-        }
-
-
-
         public string FirstPersonName
         {
             get

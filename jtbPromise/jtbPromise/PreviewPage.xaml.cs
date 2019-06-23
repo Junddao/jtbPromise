@@ -97,15 +97,22 @@ namespace jtbPromise
 
                 #region Content Draw
                 //갑, 을 이름 Contents 에 추가
-                mContent = txt_split(mContent, 20);
+
+                // 해상도별 가로 글자갯수 정해주고
+                int textNum = 0;
+                if (info.Width < 720) textNum = 20;
+                else if (info.Width >= 720 && info.Width < 1080) textNum = 28;
+                else if (info.Width >= 1080) textNum = 35;
+
+                // 쓰자
+                mContent = txt_split(mContent, textNum);
                 string NameInContents = "(갑)" + mFirstName + "은/는 (을)" + mSecondName + "에게 \n";
                 mContent = NameInContents + mContent;
                 
 
                 float textWidthContent = textPaint.MeasureText(mContent);
                 string[] arrContents = mContent.Split('\n');
-                //textPaint.TextSize = textPaint.TextSize * 0.45f;
-                textPaint.TextSize = 32f;
+                textPaint.TextSize = 40f;
 
                 for (int i = 0; i < arrContents.Count(); i++)
                 {
@@ -117,6 +124,25 @@ namespace jtbPromise
 
                     canvas.DrawText(arrContents[i], xTextContent, yTextContent, textPaint);
                 }
+                #endregion
+
+                #region Date Draw
+                // Adjust TextSize property so text is 95% of screen width
+                string mDate = DateTime.Now.ToString("yyyy-MM-dd");
+                float textWidthDate = textPaint.MeasureText(mDate);
+                //textPaint.TextSize = 0.3f * info.Width * textPaint.TextSize / textWidthTitle;
+                textPaint.TextSize = 40f;
+
+                // Find the text bounds
+                SKRect textBoundsDate = new SKRect();
+                textPaint.MeasureText(mDate, ref textBoundsDate);
+
+                // Calculate offsets to center the text on the screen
+                float xTextDate = info.Width / 2 - textBoundsDate.MidX;
+                float yTextDate = info.Height - (textBoundsDate.Height * 2) - 200;
+
+                // And draw the text
+                canvas.DrawText(mDate, xTextDate, yTextDate, textPaint);
                 #endregion
 
 

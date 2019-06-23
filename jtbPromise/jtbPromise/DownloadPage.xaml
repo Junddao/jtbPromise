@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jtbPromise.DownloadPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgViewer" Source="{Binding DocImagePath}" VerticalOptions="CenterAndExpand"/>
+            <Button x:Name="btDownload" FontSize="36" Text="저장" Style="{StaticResource BtnStyle}" Clicked="BtDownload_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -18,17 +18,8 @@ namespace jtbPromise
         public MainPage()
         {
             InitializeComponent();
-
-            //AdmobControl admobControl = new AdmobControl()
-            //{
-            //    AdUnitId = AppConstants.BannerId
-            //};
-            //Label adLabel = new Label() { Text = "Ads will be displayed here!" };
-
-            //Content = admobControl;
-            //this.BindingContext = new AppConstants();
-
         }
+
         async void BtnCreateOffLine_Clicked(object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new MakeDocPage(), false);
@@ -42,7 +33,7 @@ namespace jtbPromise
 
         private void BtnCreateOnLine_Clicked(object sender, EventArgs e)
         {
-            //playAds();
+            //online 은 나중에..
         }
 
         async void ShowInterstitialAdsButton_Clicked(object sender, EventArgs e)

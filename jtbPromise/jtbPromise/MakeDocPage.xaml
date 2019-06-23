@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:jtbPromise"
              x:Class="jtbPromise.MakeDocPage"
              Title="jtb Promise">
-    <ContentPage.BindingContext>
+    <!--<ContentPage.BindingContext>
         <local:MakeDocPageViewModel/>
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
     <ContentPage.Content>
         <Grid Margin="5,5,5,5">
             <Grid.RowDefinitions>
@@ -29,9 +28,6 @@
                         <ColumnDefinition Width="30*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="제목" Style="{StaticResource LbStyle}" VerticalOptions="Center"/>
-                    <Editor x:Name="edtTitle"  Grid.Column="1" Text="{Binding Title, Mode=OneWayToSource}" FontSize="Small"/>
-
                     <Label Text="(갑) 성명"  VerticalOptions="Center" Grid.Row="1" Style="{StaticResource LbStyle}" />
                     <Editor x:Name="edtFirstPersonName"  Grid.Column="1" Text="{Binding FirstPersonName, Mode=OneWayToSource}" Grid.Row="1" FontSize="Small"/>
                     <Button x:Name="btnFirstPersonCert" Text="Cert" Grid.Column="2" Grid.Row="1" Style="{StaticResource BtnStyle}" Clicked="BtnFirstPersonCert_Clicked" />
@@ -51,7 +47,7 @@
                 </Grid.RowDefinitions>
                 <Grid>
                     <StackLayout>
-                        <Label x:Name="lbTitle" Text="{Binding Title}" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30, 30, 30, 30" Style="{StaticResource LbStyle}"/>
+                        <Label x:Name="lbTitle" Text="계 약 서" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30, 30, 30, 30" Style="{StaticResource LbStyle}"/>
                         <Label x:Name="lbContent" Text="{Binding Document}" Style="{StaticResource LbStyle}"/>
                     </StackLayout>
 

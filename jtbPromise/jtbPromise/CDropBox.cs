@@ -126,7 +126,7 @@ namespace jtbPromise
                     //_strAccessToken = result.AccessToken;
                     //AccessTocken = result.AccessToken;
                     DropboxClientConfig CC = new DropboxClientConfig(AppName, 1);
-                    HttpClient HTC = new HttpClient();
+                    HttpClient HTC = new HttpClient(new HttpClientHandler());
                     HTC.Timeout = TimeSpan.FromMinutes(10); // set timeout for each ghttp request to Dropbox API.  
                     CC.HttpClient = HTC;
                     DBClient = new DropboxClient(AccessTocken, CC);
@@ -139,6 +139,19 @@ namespace jtbPromise
                 throw ex;
             }
         }
+
+        //private DropboxClient GetClient()
+        //{
+        //    if (Device.RuntimePlatform == Device.Android)
+        //    {
+        //        return new DropboxClient(AccessTocken, new DropboxClientConfig()
+        //        {
+        //            HttpClient = new HttpClient(new
+        //               HttpClientHandler())
+        //        });
+        //    }
+        //    return new DropboxClient(AccessTocken);
+        //}
 
         /// <summary>  
         /// Method to create new folder on Dropbox  
@@ -272,22 +285,42 @@ namespace jtbPromise
         /// <param name="DownloadFolderPath"> Local folder path where we want to download file</param>  
         /// <param name="DownloadFileName">File name to download Dropbox files in local drive</param>  
         /// <returns></returns>  
-        public bool Download(string DropboxFolderPath, string DropboxFileName, string DownloadFolderPath, string DownloadFileName)
+        public async Task Download(string DropboxFolderPath, string DropboxFileName, string DownloadFolderPath, string DownloadFileName)
         {
             try
             {
-                var response = DBClient.Files.DownloadAsync(DropboxFolderPath + "/" + DropboxFileName);
-                var result = response.Result.GetContentAsStreamAsync(); //Added to wait for the result from Async method  
+                var response = await DBClient.Files.DownloadAsync(DropboxFolderPath + "/" + DropboxFileName);
+                //var files = response.GetContentAsStreamAsync(); //Added to wait for the result from Async method  
 
-                return true;
+                using (FileStream fileStream = File.Create(DownloadFolderPath + "/" + DownloadFileName))
+                {
+                    (await response.GetContentAsStreamAsync()).CopyTo(fileStream);
+                }
+
+
             }
             catch (Exception ex)
             {
-                return false;
+          
             }
-
         }
+
+        //public async Task Download(string remoteFilePath, string localFilePath)
+        //{
+        //    using (var response = await DBClient.Files.DownloadAsync(remoteFilePath))
+        //    {
+        //        using (var fileStream = File.Create(localFilePath))
+        //        {
+        //            response.GetContentAsStreamAsync().Result.CopyTo(fileStream);
+        //        }
+
+        //    }
+        //}
         #endregion
+
+
+
+
         #region Validation Methods  
         /// <summary>  
         /// Validation method to verify that AppKey and AppSecret is not blank.  

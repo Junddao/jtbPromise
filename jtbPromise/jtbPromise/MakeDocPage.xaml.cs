@@ -34,6 +34,8 @@ namespace jtbPromise
         {
             InitializeComponent();
 
+            BindingContext = new MakeDocPageViewModel();
+
             CreateFolder(MakeDocPage.folderPathforSave);
 
            
@@ -51,7 +53,7 @@ namespace jtbPromise
 
         async void BtnPreview_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PreviewPage(edtTitle.Text, edtContent.Text, edtFirstPersonName.Text, edtSecondPersonName.Text), false);
+            await Navigation.PushAsync(new PreviewPage(lbTitle.Text, edtContent.Text, edtFirstPersonName.Text, edtSecondPersonName.Text), false);
         }
 
 
@@ -63,7 +65,6 @@ namespace jtbPromise
 
         public string GetPhoneNumber()
         {
-
             string PhoneNumber = DependencyService.Get<PhoneNumberInterface>().GetPhoneNumber();
             return PhoneNumber;
         }
@@ -102,7 +103,7 @@ namespace jtbPromise
                     }
                     
                     // 삭제하기
-                    DeleteFolrder(MakeDocPage.folderPathforSave);
+                    DeleteFolder(MakeDocPage.folderPathforSave);
 
                     await Navigation.PushAsync(new MainPage());
                     Navigation.RemovePage(this);
@@ -123,7 +124,7 @@ namespace jtbPromise
         async void BtnCancel_Clicked(object sender, EventArgs e)
         {
             // jtbPromise 폴더 삭제하기
-            DeleteFolrder(MakeDocPage.folderPathforSave);
+            DeleteFolder(MakeDocPage.folderPathforSave);
 
             await Navigation.PushAsync(new MainPage());
             Navigation.RemovePage(this);
@@ -138,7 +139,7 @@ namespace jtbPromise
             }
         }
 
-        private void DeleteFolrder(string dirPath)
+        private void DeleteFolder(string dirPath)
         {
             DirectoryInfo dInfo = new DirectoryInfo(dirPath);
             if(dInfo.Exists == true)

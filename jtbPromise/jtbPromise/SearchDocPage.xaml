@@ -9,7 +9,7 @@
                 <RowDefinition Height="9*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <ListView x:Name="DocView">
+            <ListView x:Name="DocView" ItemSelected="DocView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
