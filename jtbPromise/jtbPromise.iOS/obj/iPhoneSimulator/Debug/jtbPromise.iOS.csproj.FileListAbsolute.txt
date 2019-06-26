@@ -132,3 +132,8 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhone
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.csproj.CopyComplete
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.exe
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\obj\iPhoneSimulator\Debug\jtbPromise.iOS.pdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.iOS\bin\iPhoneSimulator\Debug\jtbPromise.dll.mdb

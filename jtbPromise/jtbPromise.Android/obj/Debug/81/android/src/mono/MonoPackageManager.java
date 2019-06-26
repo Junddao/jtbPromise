@@ -115,6 +115,8 @@ class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"PCLStorage.Abstractions.dll",
 		"PCLStorage.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",

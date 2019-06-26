@@ -11,6 +11,8 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\PCLStorage.Abstractions.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\PCLStorage.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Rg.Plugins.Popup.dll
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\Rg.Plugins.Popup.Droid.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\SkiaSharp.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Android.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Forms.dll

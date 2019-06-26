@@ -62,7 +62,7 @@ namespace jtbPromise
             try
             {
                 // Button 색을 바꾼다.
-                BtnRecord.BackgroundColor = Color.Blue;
+                BtnRecord.BackgroundColor = Color.DodgerBlue;
 
                 if (File.Exists(filePath))
                     File.Delete(filePath);

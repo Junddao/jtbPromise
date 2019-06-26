@@ -6,6 +6,8 @@ jtbPromise
 Newtonsoft.Json
 PCLStorage.Abstractions
 PCLStorage
+Rg.Plugins.Popup
+Rg.Plugins.Popup.Droid
 SkiaSharp
 SkiaSharp.Views.Android
 SkiaSharp.Views.Forms

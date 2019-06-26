@@ -13,6 +13,9 @@ using SkiaSharp.Views.Forms;
 using TouchTracking;
 using System.IO;
 
+using Rg.Plugins.Popup.Services;
+using Rg.Plugins.Popup.Extensions;
+
 namespace jtbPromise
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -193,14 +196,18 @@ namespace jtbPromise
                     }
                 }
 
-                // 저장되면 OK popup
-                await DisplayAlert("Save", "Complete your sign.", "OK");
+                var popupPage = new PopupView();
+                await Navigation.PushPopupAsync(popupPage);
+                await Task.Delay(2000);
+                await Navigation.RemovePopupPageAsync(popupPage);
+
+                //await DisplayAlert("Save", "Complete your sign.", "OK");
 
                 await Navigation.PopToRootAsync();
             }
             catch(Exception)
             {
-                await DisplayAlert("Alert", "Can't save your Sign.", "OK");
+                await DisplayAlert("경고", "서명을 저장할 수 없습니다.", "OK");
             }
         }
 

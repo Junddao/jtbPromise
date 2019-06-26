@@ -258,21 +258,17 @@ namespace jtbPromise
         /// <param name="UploadfileName"> File name to be created in Dropbox</param>  
         /// <param name="SourceFilePath"> Local file path which we want to upload</param>  
         /// <returns></returns>  
-        public bool Upload(string UploadfolderPath, string UploadfileName, string SourceFilePath)
+        public async Task Upload(string UploadfolderPath, string UploadfileName, string SourceFilePath)
         {
             try
             {
                 using (var stream = new MemoryStream(File.ReadAllBytes(SourceFilePath)))
                 {
-                    var response = DBClient.Files.UploadAsync(UploadfolderPath + "/" + UploadfileName, WriteMode.Overwrite.Instance, body: stream);
-                    var rest = response.Result; //Added to wait for the result from Async method  
+                    var response = await DBClient.Files.UploadAsync(UploadfolderPath + "/" + UploadfileName, WriteMode.Overwrite.Instance, body: stream);
                 }
-
-                return true;
             }
             catch (Exception ex)
             {
-                return false;
             }
 
         }
@@ -296,8 +292,6 @@ namespace jtbPromise
                 {
                     (await response.GetContentAsStreamAsync()).CopyTo(fileStream);
                 }
-
-
             }
             catch (Exception ex)
             {

@@ -1,11 +1,8 @@
 ﻿using Dropbox.Api.Files;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -13,7 +10,7 @@ using Xamarin.Forms.Xaml;
 
 namespace jtbPromise
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SearchDocPage : ContentPage
 	{
         CDropBox cDropbox;
@@ -23,7 +20,7 @@ namespace jtbPromise
         CSearchFileViewModel searchFileViewModel = new CSearchFileViewModel();
 
 
-        public static string folderPathforSave = System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath, "jtbPromise");
+        public static string folderPathforSave = System.IO.Path.Combine(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath, "jtbPromiseDownload");
         DirectoryInfo di = new DirectoryInfo(folderPathforSave);
         string selectedFileName = string.Empty;
 
@@ -115,11 +112,7 @@ namespace jtbPromise
                 {
                     //IList<Metadata> IliFiles = await cDropbox.ListFiles("/Dropbox/jtbPromise/" + folderName);
                        
-                    await cDropbox.Download("/Dropbox/jtbPromise/" + folderName, filename, di.FullName, filename);
-
-                    // 음성파일 다운로드 처리 필요.
-                    //await cDropbox.Download("/Dropbox/jtbPromise/" + folderName, "first.3gp", di.FullName, filename);
-                    //await cDropbox.Download("/Dropbox/jtbPromise/" + folderName, "second.3gp", di.FullName, filename);
+                    await cDropbox.Download("/Dropbox/jtbPromise/" + folderName, filename, di.FullName, filename + ".zip");
                 }
             }
                 
@@ -138,11 +131,13 @@ namespace jtbPromise
             Debug.WriteLine("Continue button click implementation");
 
             await DownloadFile(selectedFileName);
+
+            await Navigation.PushAsync(new MainPage());
+            Navigation.RemovePage(this);
         }
 
         private void DocView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
             selectedFileName = (e.SelectedItem as CSearchFile).FileName;
             //await Navigation.PushAsync(new DownloadPage(e.SelectedItem as CSearchFile), false);
         }

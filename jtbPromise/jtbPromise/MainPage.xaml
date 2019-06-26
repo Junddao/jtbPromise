@@ -6,24 +6,70 @@
              x:Class="jtbPromise.MainPage"
              Title="jtb Promise">
 
-    <StackLayout VerticalOptions="FillAndExpand">
-        <Button x:Name="btnCreateOffLine" Text="만나서 계약서 작성"
+    <StackLayout VerticalOptions="FillAndExpand" >
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0" Grid.Column="0">
+                <ImageButton x:Name="btnCreateOffLine"
+                Margin="20, 20, 20, 20"
+                Source="write256.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                         
+                
+                Clicked="BtnCreateOffLine_Clicked"/>
+            <Label Text="작성하기"
+                    HorizontalOptions ="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="1">
+                <ImageButton x:Name="btnSearch" 
+                Margin="20, 20, 20, 20"
+                Source="search256.png"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="BtnSearch_Clicked"/>
+                <Label Text="찾기"
+                   HorizontalOptions ="Center"/>
+            </StackLayout>
+
+        </Grid>
+       
+        <!--<Button x:Name="btnCreateOffLine"
+                Text="만나서 계약서 작성"
                 Style="{StaticResource BtnStyle}"
                 FontSize="36"
-                Clicked="BtnCreateOffLine_Clicked" />
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="FillAndExpand"
+                Clicked="BtnCreateOffLine_Clicked">
+          
+        </Button>-->
 
 
-        <Button x:Name="btnCreateOnLine" Text="온라인 계약서 작성"
+        <!--<Button x:Name="btnCreateOnLine" Text="온라인 계약서 작성"
                 Style="{StaticResource BtnStyle}"
                 FontSize="36"
-                Grid.Row="1" Clicked="BtnCreateOnLine_Clicked"/>
+                Grid.Row="1" Clicked="BtnCreateOnLine_Clicked"/>-->
 
-        <Button x:Name="btnSearch" Text="내 계약서 검색"
+        <!--<Button x:Name="btnSearch" Text="내 계약서 검색"
                 Style="{StaticResource BtnStyle}"
                 FontSize="36"
-                Grid.Row="2" Clicked="BtnSearch_Clicked"/>
+                Grid.Row="0"
+                Grid.Column="1"
+                VerticalOptions="FillAndExpand"
+                Clicked="BtnSearch_Clicked"/>-->
 
-        <local:AdmobControl AdUnitId="{x:Static data:AppConstants.BannerId}"  Grid.Row="3" VerticalOptions="EndAndExpand"/>
+        <local:AdmobControl AdUnitId="{x:Static data:AppConstants.BannerId}"  VerticalOptions="EndAndExpand"/>
     </StackLayout>
 
     <!--<Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="Black">

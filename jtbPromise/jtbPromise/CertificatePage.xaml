@@ -5,7 +5,7 @@
              x:Class="jtbPromise.CertificatePage"
              Title="Step 1">
     <ContentPage.Content>
-        <StackLayout Spacing="10">
+        <StackLayout Spacing="10" Margin="10, 10, 10, 10" >
             <Button x:Name="BtnRecord" Text="버튼을 누른상태로 본인의 이름을 말하세요"
                 VerticalOptions="FillAndExpand"
                 HorizontalOptions="FillAndExpand" 

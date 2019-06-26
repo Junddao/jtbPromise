@@ -32,7 +32,7 @@ namespace jtbPromise
 
         public PreviewPage(string title, string content, string firstName, string secondName)
         {
-            InitializeComponent();
+            
 
             try
             {
@@ -45,10 +45,13 @@ namespace jtbPromise
             {
                 DisplayAlert("Warning", "서명후 확인하세요.", "OK");
             }
+
+            InitializeComponent();
         }
 
         async void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
         {
+
             SKImageInfo info = args.Info;
             SKSurface surface = args.Surface;
             SKCanvas canvas = surface.Canvas;
@@ -58,19 +61,20 @@ namespace jtbPromise
             //var tf = SKTextEncoding.Utf32;
             // Create an SKPaint object to display the text
 
-            SKPaint textPaint = new SKPaint
-            {
-                Style = SKPaintStyle.Fill,
-                Color = SKColors.Black,
-                StrokeWidth = 2,
-                StrokeCap = SKStrokeCap.Round,
-                StrokeJoin = SKStrokeJoin.Round,
-                TextEncoding = SKTextEncoding.Utf32
-            };
 
+            SKPaint textPaint;
             using (var tf = SKTypeface.FromFile(customFontPath))
             {
-                textPaint.Typeface = tf;
+                textPaint = new SKPaint
+                {
+                    Style = SKPaintStyle.Fill,
+                    Color = SKColors.Black,
+                    StrokeWidth = 2,
+                    StrokeCap = SKStrokeCap.Round,
+                    StrokeJoin = SKStrokeJoin.Round,
+                    TextEncoding = SKTextEncoding.Utf32,
+                    Typeface = tf
+                };
             }
 
             try

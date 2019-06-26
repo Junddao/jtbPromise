@@ -7,7 +7,9 @@
             <Style x:Key="BtnStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="White"/>
                 <Setter Property="TextColor" Value="Black"/>
-                <Setter Property="BorderRadius" Value="0"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="BorderWidth" Value="2"/>
+                
             </Style>
             <Style x:Key="LbStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>

@@ -6,12 +6,10 @@
              x:Class="jtbPromise.SignPage"
              Title="Step 2">
     <ContentPage.Content>
-        <StackLayout Spacing="10">
+        <StackLayout Spacing="10" Margin="10, 10, 10, 10">
             <Label Text="서명하세요."
                 FontSize="20"
-                FontAttributes="Bold"
-                HeightRequest="50"
-                VerticalOptions="Center"
+                FontAttributes="Bold"                   
                 Style="{StaticResource LbStyle}"
                 HorizontalOptions="CenterAndExpand" />
                 
