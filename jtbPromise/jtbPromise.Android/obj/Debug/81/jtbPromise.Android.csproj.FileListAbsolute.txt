@@ -146,8 +146,7 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\De
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\res\drawable\write64.png
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\res\drawable\write256.png
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\res\drawable\search256.png
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Debug\netstandard2.0\jtbPromise.dll
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\bin\Debug\jtbPromise.dll.mdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\res\drawable\contract256.png
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\linksrc\AdMobView.FormsPlugin.Abstractions.dll.mdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\linksrc\AdMobView.FormsPlugin.Android.dll.mdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise.Android\obj\Debug\81\linksrc\jtbPromise.dll.mdb

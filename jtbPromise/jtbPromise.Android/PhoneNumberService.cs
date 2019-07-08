@@ -22,6 +22,5 @@ namespace jtbPromise.Droid
             var tMgr = (TelephonyManager)Forms.Context.ApplicationContext.GetSystemService(Android.Content.Context.TelephonyService);
             return tMgr.Line1Number;
         }
-
     }
 }

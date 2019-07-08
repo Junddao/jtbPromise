@@ -16,7 +16,7 @@ using System.IO;
 
 namespace jtbPromise.Droid
 {
-    [Activity(Label = "jtbPromise", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "jtbPromise", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
 
@@ -68,7 +68,7 @@ namespace jtbPromise.Droid
             ActivityCompat.RequestPermissions(this, permissions.ToArray(), 1);
 
 
-            string fontName = "GodoB.ttf";
+            string fontName = "SDMiSaeng.ttf";
             //string fontName = "SourceHanSerifK-Regular.otf";
             string fontPath = Path.Combine(CacheDir.AbsolutePath,  fontName);
             using (var asset = Assets.Open(fontName))

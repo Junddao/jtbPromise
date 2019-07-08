@@ -24,11 +24,13 @@ namespace jtbPromise
         DirectoryInfo di = new DirectoryInfo(folderPathforSave);
         string selectedFileName = string.Empty;
 
-        public SearchDocPage ()
+        string mPhoneNumber;
+
+        public SearchDocPage (string phoneNumber)
 		{
 			InitializeComponent ();
             DocView.ItemsSource = searchFileViewModel.Files;
-
+            mPhoneNumber = phoneNumber;
             CheckFileList();
 
             CreateFolder(folderPathforSave);
@@ -37,7 +39,7 @@ namespace jtbPromise
         public async void CheckFileList()
         {
 
-            string folderName = GetPhoneNumber();
+            string folderName = mPhoneNumber;
 
             cDropbox = new CDropBox();
             strAuthenticationURL = cDropbox.GeneratedAuthenticationURL();
@@ -102,7 +104,7 @@ namespace jtbPromise
             CreateFolder(folderPathforSave);
             try
             {
-                string folderName = GetPhoneNumber();
+                string folderName = mPhoneNumber;
 
                 cDropbox = new CDropBox();
                 strAuthenticationURL = cDropbox.GeneratedAuthenticationURL();
@@ -132,6 +134,9 @@ namespace jtbPromise
 
             await DownloadFile(selectedFileName);
 
+
+            await DisplayAlert("저장경로", "내장메모리/Download/jtbPromiseDownload","OK");
+
             await Navigation.PushAsync(new MainPage());
             Navigation.RemovePage(this);
         }
@@ -148,7 +153,6 @@ namespace jtbPromise
             if (dInfo.Exists == false)
             {
                 dInfo.Create();
-
             }
         }
 

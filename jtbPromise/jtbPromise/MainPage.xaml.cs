@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xam.FormsPlugin.Abstractions;
+//using Xam.FormsPlugin.Abstractions;
 using Xamarin.Forms;
 
 
@@ -28,7 +28,7 @@ namespace jtbPromise
 
         async void BtnSearch_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new SearchDocPage(), false);
+            await Navigation.PushAsync(new SearchOptionPage(), false);
         }
 
         private void BtnCreateOnLine_Clicked(object sender, EventArgs e)

@@ -685,18 +685,6 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xam.FormsPlugin.AdMobView/1.0.23": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "1.3.1.6296"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
@@ -844,7 +832,6 @@
           "Rg.Plugins.Popup": "1.1.5.188",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
-          "Xam.FormsPlugin.AdMobView": "1.0.23",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.344457"
         },
@@ -1454,18 +1441,6 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xam.FormsPlugin.AdMobView/1.0.23": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "1.3.1.6296"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
@@ -1613,7 +1588,6 @@
           "Rg.Plugins.Popup": "1.1.5.188",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
-          "Xam.FormsPlugin.AdMobView": "1.0.23",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.344457"
         },
@@ -2226,18 +2200,6 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xam.FormsPlugin.AdMobView/1.0.23": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "1.3.1.6296"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
@@ -2385,7 +2347,6 @@
           "Rg.Plugins.Popup": "1.1.5.188",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
-          "Xam.FormsPlugin.AdMobView": "1.0.23",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.344457"
         },
@@ -2998,18 +2959,6 @@
           "lib/xamarinios10/_._": {}
         }
       },
-      "Xam.FormsPlugin.AdMobView/1.0.23": {
-        "type": "package",
-        "dependencies": {
-          "Xamarin.Forms": "1.3.1.6296"
-        },
-        "compile": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll": {}
-        }
-      },
       "Xamarin.Essentials/1.1.0": {
         "type": "package",
         "dependencies": {
@@ -3157,7 +3106,6 @@
           "Rg.Plugins.Popup": "1.1.5.188",
           "SkiaSharp": "1.68.0",
           "SkiaSharp.Views.Forms": "1.68.0",
-          "Xam.FormsPlugin.AdMobView": "1.0.23",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "3.6.0.344457"
         },
@@ -6381,34 +6329,6 @@
         "ref/xamarinwatchos10/_._",
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
-      ]
-    },
-    "Xam.FormsPlugin.AdMobView/1.0.23": {
-      "sha512": "wwrvJcu5Kc7ZqshfWTzXpUqXmsHyERwKMn7ukDOgRfMvLHYEzN4dg2KRnfZnRX1dmsb7Cd5Aiv/EaFNAwUT9vQ==",
-      "type": "package",
-      "path": "xam.formsplugin.admobview/1.0.23",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/MonoAndroid10/readme.txt",
-        "content/wp8/Renderers/AdMobViewRenderer.cs",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.dll",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.pdb",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Abstractions.xml",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.dll",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.pdb",
-        "lib/MonoAndroid10/AdMobView.FormsPlugin.Android.xml",
-        "lib/MonoAndroid10/Xamarin.GooglePlayServices.Ads.dll",
-        "lib/MonoAndroid10/Xamarin.GooglePlayServices.Base.dll",
-        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.dll",
-        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.pdb",
-        "lib/portable-net45+wp8+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/AdMobView.FormsPlugin.Abstractions.xml",
-        "lib/wp8/AdMobView.FormsPlugin.Abstractions.dll",
-        "lib/wp8/AdMobView.FormsPlugin.Abstractions.pdb",
-        "lib/wp8/AdMobView.FormsPlugin.Abstractions.xml",
-        "lib/wp8/GoogleAds.dll",
-        "xam.formsplugin.admobview.1.0.23.nupkg.sha512",
-        "xam.formsplugin.admobview.nuspec"
       ]
     },
     "Xamarin.Essentials/1.1.0": {

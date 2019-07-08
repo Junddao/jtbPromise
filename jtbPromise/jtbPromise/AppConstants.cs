@@ -31,8 +31,8 @@ namespace jtbPromise
                 switch (Device.RuntimePlatform)
                 {
                     case Device.Android:
-                        //return "ca-app-pub-9695790043722201/4327342491";    // my code
-                        return "ca-app-pub-3940256099942544/6300978111";      // test code
+                        return "ca-app-pub-9695790043722201/4327342491";    // my code
+                                                                            //return "ca-app-pub-3940256099942544/6300978111";      // test code
                     default:
                         return "ca-app-pub-9695790043722201/4327342491";
                 }
@@ -51,8 +51,8 @@ namespace jtbPromise
                 {
                     case Device.Android:
 
-                        //return "ca-app-pub-9695790043722201/8437977894";    //my code
-                        return "ca-app-pub-3940256099942544/1033173712";    //test code
+                        return "ca-app-pub-9695790043722201/8437977894";    //my code
+                                                                            //return "ca-app-pub-3940256099942544/1033173712";    //test code
                     default:
                         return "ca-app-pub-9695790043722201/8437977894";
                 }

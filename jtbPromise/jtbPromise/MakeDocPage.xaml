@@ -29,11 +29,11 @@
 
                     <Label Text="(갑) 성명"  VerticalOptions="Center" Grid.Row="0" Style="{StaticResource LbStyle}" />
                     <Editor x:Name="edtFirstPersonName"  Grid.Column="1" Text="{Binding FirstPersonName, Mode=OneWayToSource}" Grid.Row="0" FontSize="Small"/>
-                    <Button x:Name="btnFirstPersonCert" Text="Cert" Grid.Column="2" Grid.Row="0" Style="{StaticResource BtnStyle}" Clicked="BtnFirstPersonCert_Clicked" />
+                    <Button x:Name="btnFirstPersonCert" Text="인증" Grid.Column="2" Grid.Row="0" Style="{StaticResource BtnStyle}" Clicked="BtnFirstPersonCert_Clicked" />
 
                     <Label Text="(을) 성명" Grid.Row="1" VerticalOptions="Center" Style="{StaticResource LbStyle}"/>
                     <Editor x:Name="edtSecondPersonName" Grid.Row="1" Grid.Column="1" Text="{Binding SecondPersonName, Mode=OneWayToSource}" FontSize="Small"/>
-                    <Button x:Name="btnSecondPersonCert" Text="Cert"  Grid.Row="1" Grid.Column="2" Style="{StaticResource BtnStyle}" Clicked="BtnSecondPersonCert_Clicked"/>
+                    <Button x:Name="btnSecondPersonCert" Text="인증"  Grid.Row="1" Grid.Column="2" Style="{StaticResource BtnStyle}" Clicked="BtnSecondPersonCert_Clicked"/>
 
                     <Label Text="내용" Grid.Row="2"  VerticalOptions="Center" Style="{StaticResource LbStyle}"/>
                     <Editor x:Name="edtContent" Grid.Row="2" Grid.Column="1" Text="{Binding WriteContent}" Grid.ColumnSpan="2" FontSize="Small"/>

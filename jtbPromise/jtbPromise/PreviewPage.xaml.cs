@@ -27,23 +27,31 @@ namespace jtbPromise
         string mFirstName = string.Empty;
         string mSecondName = string.Empty;
 
-        string customFontPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "cache", "GodoB.ttf");
+        string customFontPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "cache", "SDMiSaeng.ttf");
         //string customFontPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "cache", "SourceHanSerifK-Regular.otf");
+        SKPaint textPaint;
+
 
         public PreviewPage(string title, string content, string firstName, string secondName)
         {
-            
+      
+            mTitle = title;
+            mContent = content;
+            mFirstName = firstName;
+            mSecondName = secondName;
 
-            try
+            using (var tf = SKTypeface.FromFile(customFontPath))
             {
-                mTitle = title;
-                mContent = content;
-                mFirstName = firstName;
-                mSecondName = secondName;
-            }
-            catch(Exception)
-            {
-                DisplayAlert("Warning", "서명후 확인하세요.", "OK");
+                textPaint = new SKPaint
+                {
+                    Style = SKPaintStyle.Fill,
+                    Color = SKColors.Black,
+                    StrokeWidth = 2,
+                    StrokeCap = SKStrokeCap.Round,
+                    StrokeJoin = SKStrokeJoin.Round,
+                    TextEncoding = SKTextEncoding.Utf8,
+                    Typeface = tf
+                };
             }
 
             InitializeComponent();
@@ -58,27 +66,30 @@ namespace jtbPromise
 
             canvas.Clear();
 
-            //var tf = SKTextEncoding.Utf32;
-            // Create an SKPaint object to display the text
-
-
-            SKPaint textPaint;
-            using (var tf = SKTypeface.FromFile(customFontPath))
-            {
-                textPaint = new SKPaint
-                {
-                    Style = SKPaintStyle.Fill,
-                    Color = SKColors.Black,
-                    StrokeWidth = 2,
-                    StrokeCap = SKStrokeCap.Round,
-                    StrokeJoin = SKStrokeJoin.Round,
-                    TextEncoding = SKTextEncoding.Utf32,
-                    Typeface = tf
-                };
-            }
-
             try
             {
+                #region logo write
+                // Adjust TextSize property so text is 95% of screen width
+                string logoName = "/ㅈㅌㅂ/";
+                float textWidthlogo = textPaint.MeasureText(logoName);                  
+                //textPaint.TextSize = 0.3f * info.Width * textPaint.TextSize / textWidthTitle;
+                textPaint.TextSize = 40f;
+                textPaint.Color = SKColors.Blue;
+                // Find the text bounds
+                SKRect textBoundslogo = new SKRect();
+                textPaint.MeasureText(mTitle, ref textBoundslogo);
+
+                // Calculate offsets to center the text on the screen
+                //float xTextlogo = info.Width - (textBoundslogo.Width * 2) - 50;
+                float xTextlogo = 20;
+                float yTextlogo = info.Height - textBoundslogo.Height - 50;
+
+                // And draw the text
+                canvas.DrawText(logoName, xTextlogo, yTextlogo, textPaint);
+
+                textPaint.Color = SKColors.Black; // color 
+                #endregion
+
                 #region Title Draw
                 // Adjust TextSize property so text is 95% of screen width
                 float textWidthTitle = textPaint.MeasureText(mTitle);

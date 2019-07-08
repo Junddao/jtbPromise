@@ -4,13 +4,15 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Release\ne
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Release\netstandard2.0\Mono.Android.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Release\netstandard2.0\Mono.Android.pdb
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\bin\Release\netstandard2.0\Mono.Android.xml
-C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.csprojAssemblyReference.cache
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\App.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\CertificatePage.xaml.g.cs
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\DownloadPage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\MakeDocPage.xaml.g.cs
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\PopupView.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\PreviewPage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\SearchDocPage.xaml.g.cs
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\SearchOptionPage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\SignPage.xaml.g.cs
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.csproj.CoreCompileInputs.cache
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.AssemblyInfoInputs.cache
@@ -19,3 +21,4 @@ C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\ne
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.csproj.CopyComplete
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.dll
 C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.pdb
+C:\Users\junram\Documents\GitHub\jtbPromise\jtbPromise\jtbPromise\obj\Release\netstandard2.0\jtbPromise.csprojAssemblyReference.cache
